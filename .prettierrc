@@ -1,0 +1,14 @@
+{
+  "arrowParens": "always",
+  "endOfLine": "lf",
+  "jsxSingleQuote": true,
+  "singleQuote": true,
+  "useTabs": true,
+  "bracketSpacing": true,
+  "semi": false,
+  "quoteProps": "as-needed",
+  "tabWidth": 2,
+  "printWidth": 80,
+  "rangeEnd": 0,
+  "embeddedLanguageFormatting": "auto"
+}
