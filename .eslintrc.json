@@ -24,6 +24,7 @@
 		"quotes": ["warn", "single"],
 		"no-proto": "warn",
 		"no-redeclare": "error",
-		"capitalized-comments": "warn"
+		"capitalized-comments": "warn",
+		"indent": "off"
 	}
 }
