@@ -1,0 +1,23 @@
+{
+	"short_name": "callMeDev",
+	"name": "callMeDev Web",
+	"description": "A landing page for callMeDev server",
+	"start_url": "index.html",
+	"scope": "/",
+	"display": "standalone",
+	"theme_color": "#000",
+	"background_color": "#fff",
+	"icons": [
+		{
+			"src": "/favicon.svg",
+			"sizes": "196x196",
+			"type": "image/png",
+			"purpose": "any"
+		},
+		{
+			"src": "/src/assets/illustrations/big-logo.svg",
+			"sizes": "any",
+			"purpose": "any"
+		}
+	]
+}
