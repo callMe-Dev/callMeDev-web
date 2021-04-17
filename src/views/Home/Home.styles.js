@@ -3,6 +3,7 @@ import { screens } from '../../styles/utils/screens'
 import { sideLayout } from '../../styles/sideLayout'
 
 export const HomeStyled = styled.div`
+	width: 100%;
   background: var(--black);
 	/* Is at the beginning since the padding-top is affected by the sideLayout function */
 	${sideLayout()}

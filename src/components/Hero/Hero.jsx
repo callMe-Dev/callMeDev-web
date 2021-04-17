@@ -2,7 +2,7 @@ import React from 'react'
 import callMeDevBigLogo from '../../assets/illustrations/big-logo.svg'
 import discordLogo from '../../assets/illustrations/discord-logo.svg';
 
-import {HeroDiscordBtn, HeroLogo, HeroStyled, HeroTextContent, HeroTitle} from './Hero.styles'
+import {HeroDiscordBtn, HeroDiscordIcon, HeroLogo, HeroStyled, HeroTextContent, HeroTitle} from './Hero.styles'
 
 export default function Hero() {
   return (
@@ -17,7 +17,7 @@ export default function Hero() {
           Tambien platicamos y convivimos mas que solo como comunidad, somos amigos devs
         </HeroTextContent>
         <HeroDiscordBtn type='button'>
-          <img src={discordLogo} alt='Discord logo'/>
+          <HeroDiscordIcon src={discordLogo} alt='Discord logo'/>
           Unete con Discord
         </HeroDiscordBtn>
       </div>
