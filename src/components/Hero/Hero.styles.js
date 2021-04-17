@@ -4,6 +4,7 @@ import { screens } from '../../styles/utils/screens'
 
 export const HeroStyled = styled.section`
   background: var(--black);
+  position: relative;
   /* Is at the beginning since the padding-top is affected by the sideLayout function */
   ${sideLayout()}
 
@@ -91,7 +92,8 @@ export const HeroDiscordBtn = styled.button`
   outline: none;
   padding: 0.8rem 2rem;
   width: auto;
-	cursor: pointer;
+  cursor: pointer;
+	transition: var(--transition);
 
   @media (min-width: ${screens.ipad}) {
     margin: 0;
@@ -99,9 +101,44 @@ export const HeroDiscordBtn = styled.button`
     font-size: 1.3rem;
     margin-top: 1.6rem;
   }
+
+	&:hover {
+		filter: brightness(1.1);
+	}
 `
 
 export const HeroDiscordIcon = styled.img`
-	height: 35px;
-	width: 35px;
+  height: 35px;
+  width: 35px;
+`
+
+export const HeroWaveToDown = styled.img`
+  position: absolute;
+  bottom: -3.3rem;
+  left: 0;
+  width: 100%;
+
+  @media (max-width: ${screens.mobile}) {
+    bottom: -3rem;
+  }
+
+  @media (min-width: ${screens.tablet}) {
+    bottom: -5.3rem;
+  }
+
+  @media (min-width: 725px) {
+    bottom: -6.3rem;
+  }
+
+  @media (min-width: 830px) {
+    bottom: -7.3rem;
+  }
+
+  @media (min-width: ${screens.ipad}) {
+    bottom: -8.3rem;
+  }
+
+  @media (min-width: ${screens.desk}) {
+    bottom: -11.8rem;
+  }
 `

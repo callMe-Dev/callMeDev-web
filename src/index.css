@@ -17,6 +17,7 @@
   --yellow: #F0DB4F;
   /* Properties */
   --radius: 15px;
+  --transition: .3s ease;
   /* Fonts */
   --poppins-family: 'Poppins', sans-serif;
   --roboto-family: 'Roboto', sans-serif;
