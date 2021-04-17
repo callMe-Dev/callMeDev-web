@@ -10,6 +10,10 @@ export const Header = styled.header`
   position: relative;
   background: var(--dark);
   ${sideLayout()}
+
+  @media (min-width: ${screens.ipad}) {
+    padding-bottom: 0;
+  }
 `
 
 export const Nav = styled.nav`
@@ -29,6 +33,17 @@ export const NavBarLink = styled.a`
 
 export const NavIllustration = styled.img`
   width: 60px;
+	transition: var(--transition);
+	cursor: pointer;
+
+  @media (min-width: ${screens.ipad}) {
+    width: 80px;
+    height: auto;
+  }
+
+	&:hover {
+		transform: scale(1.1);
+	}
 `
 
 export const NavWave = styled.img`
@@ -37,17 +52,22 @@ export const NavWave = styled.img`
   bottom: -1.1rem;
   width: 100%;
   fill: var(--dark);
+	z-index: 10;
 
   @media (min-width: ${screens.tablet}) {
     bottom: -1.5rem;
   }
 
+  @media (min-width: 740px) {
+    bottom: -2.5rem;
+  }
+
   @media (min-width: ${screens.ipad}) {
-		bottom: -2rem;
-	}
+    bottom: -3.5rem;
+  }
 
   @media (min-width: ${screens.desk}) {
-		bottom: -4rem;
-	}
+    bottom: -4.75rem;
+  }
 `
 

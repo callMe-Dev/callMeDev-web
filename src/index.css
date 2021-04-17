@@ -15,6 +15,10 @@
   --pink: #e83e8c;
   --light-gray: #99aab5;
   --yellow: #F0DB4F;
+  /* Properties */
+  --radius: 15px;
+  --transition: .3s ease;
+  /* Fonts */
   --poppins-family: 'Poppins', sans-serif;
   --roboto-family: 'Roboto', sans-serif;
 }
@@ -33,7 +37,6 @@ html {
   box-sizing: inherit;
 }
 
-
 body {
   margin: 0;
   background: var(--dark);
@@ -44,7 +47,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.App {
+  width: 100%;
 }
