@@ -5,7 +5,8 @@ import {
   AboutCommunityTitle,
   SpanTitle,
   AboutCommunityText,
-
+  AboutCommunityBtn,
+  AboutCommunityIcon
 } from "./AboutCommunity.styles"
 
 export default function AboutCommunity() {
@@ -17,6 +18,10 @@ export default function AboutCommunity() {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt diam dui, et condimentum lorem interdum quis. Aenean posuere pulvinar massa in scelerisque. Vivamus elementum bibendum elit,
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt diam dui, et condimentum lorem interdum quis. Aenean posuere pulvinar massa in scelerisque. Vivamus elementum bibendum elit
         </AboutCommunityText>
+        <AboutCommunityBtn type="button">
+          <AboutCommunityIcon src={historyBook} alt="Conoce nuestra historia"/>
+          Nuestra historia
+        </AboutCommunityBtn>
       </div>
 
     </AboutCommunityStyled>
