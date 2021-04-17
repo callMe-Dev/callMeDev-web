@@ -71,6 +71,7 @@ export const HeroTextContent = styled.p`
 
   @media (min-width: ${screens.ipad}) {
     text-align: left;
+    width: 360px;
     margin-bottom: 1rem;
   }
 `

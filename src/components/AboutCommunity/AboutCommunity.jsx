@@ -1,9 +1,10 @@
 import React from 'react'
+import { AboutCommunityStyled } from './AboutCommunity.styles'
 
 export default function AboutCommunity() {
   return (
-    <div>
+    <AboutCommunityStyled>
       <p>Some content</p>
-    </div>
+    </AboutCommunityStyled>
   )
 }
