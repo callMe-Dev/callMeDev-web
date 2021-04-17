@@ -28,7 +28,6 @@ Muchos devs quieren aprender [react](https://reactjs.org/), entonces decidimos u
 
 - React Helmmet -> Para un mejor **SEO** haciendo dinamico las etiquetas title y description de la pagina
 
-
 Tambien utilizamos **eslint** y **prettier** para tener un mejor control en la forma en como escribe codigo cada persona y seguir un estandar con buenas practicas
 
 Y **.editorconfig** para que las personas que usen diferentes editores de codigo, puedan seguir el estandar del proyecto
@@ -51,7 +50,6 @@ npm run build
 
 Construira la app para produccion y poder usarla en alguna plataforma de host, convirtiendo el codigo a Javascript para que lo entienda el navegador
 
-
 ```
 npm run serve
 ```
@@ -70,6 +68,9 @@ npm run format
 
 Ejecutara a **prettier** para formatear todos los archivos del proyecto, excepto los node_modules
 
+Usamos solo prettier de manera en el editor ya que en su filosofia no lo recomiendan
+
+https://prettier.io/docs/en/option-philosophy.html
 
 ## Contribuir?
 

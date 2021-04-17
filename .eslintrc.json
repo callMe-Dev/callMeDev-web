@@ -1,12 +1,12 @@
 {
   "env": {
     "browser": true,
-    "es2021": true,
-    "node": true
+    "es2021": true
   },
   "extends": [
     "plugin:react/recommended",
     "airbnb",
+    "prettier",
     "plugin:prettier/recommended"
   ],
   "parserOptions": {
@@ -32,7 +32,6 @@
     "camelcase": 0, // relay generates types with _ in the names, so need to allow non-camelcased,
     "no-underscore-dangle": 0,
     "lines-between-class-members": 0,
-    "no-continue": 0,
     "react/static-property-placement": 0,
     "react/state-in-constructor": 0,
     "react/jsx-props-no-spreading": 0,
@@ -46,14 +45,10 @@
     "no-param-reassign": "off",
     "operator-linebreak": "off",
     "implicit-arrow-linebreak": "off",
-    "max-len": "off",
-    "no-shadow": "off",
-    "arrow-parens": "off",
-    "no-confusing-arrow": "off",
-    "no-use-before-define": "off",
-    "object-curly-newline": "off",
-    "function-paren-newline": "off",
-    "indent": ["warn", 2]
+    "arrow-parens": "warn",
+    "indent": ["warn", 2],
+    "no-unused-vars": "error",
+    "no-console": "off"
   },
   "settings": {
     "import/resolver": {

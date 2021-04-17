@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Hero from '../../components/Hero/Hero'
-import AboutCommunity from '../../components/AboutCommunity/AboutCommunity';
+import AboutCommunity from '../../components/AboutCommunity/AboutCommunity'
 
 import {HomeStyled} from './Home.styles'
 
