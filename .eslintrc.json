@@ -29,7 +29,6 @@
     "react/destructuring-assignment": 0,
     "jsx-a11y/no-static-element-interactions": 0,
     "jsx-a11y/label-has-for": 0,
-    "jsx-a11y/img-has-alt": 0,
     "camelcase": 0, // relay generates types with _ in the names, so need to allow non-camelcased,
     "no-underscore-dangle": 0,
     "lines-between-class-members": 0,

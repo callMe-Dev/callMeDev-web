@@ -1,0 +1,20 @@
+// These variables are if the variables in: root are not recognized
+export const variables = {
+  black: '#2f353a',
+  dark: '#37393F',
+  darkPurple: '#292841',
+  purple: '#7289da',
+  purpleGradient: 'linear-gradient(90deg,#8ea1e1,#7289da)',
+  blue: '#00b0f4',
+  white: '#ffffff',
+  lightColor: '#f3f4f5',
+  gray: '#73818f',
+  red: '#f86c6b',
+  indigo: '#6610f2',
+  succesColor: '#4dbd74',
+  pink: '#e83e8c',
+  lightGray: '#99aab5',
+  yellow: '#F0DB4F',
+  poppinsFamily: '"Poppins", sans-serif',
+  robotoFamily: '"Roboto", sans-serif',
+}
