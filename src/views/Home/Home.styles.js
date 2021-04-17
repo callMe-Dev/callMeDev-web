@@ -1,5 +1,5 @@
-import styled from 'styled-components'
+import styled from "styled-components"
 
 export const HomeStyled = styled.div`
-	width: 100%;
+  width: 100%;
 `

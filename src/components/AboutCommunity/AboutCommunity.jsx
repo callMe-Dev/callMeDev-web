@@ -1,5 +1,5 @@
-import React from 'react'
-import { AboutCommunityStyled } from './AboutCommunity.styles'
+import React from "react"
+import { AboutCommunityStyled } from "./AboutCommunity.styles"
 
 export default function AboutCommunity() {
   return (

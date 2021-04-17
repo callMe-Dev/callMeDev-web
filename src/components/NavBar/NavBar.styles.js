@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import { textUnderline } from '../../styles/textUnderline'
-import { sideLayout } from '../../styles/sideLayout'
-import { screens } from '../../styles/utils/screens'
+import styled from "styled-components"
+import { textUnderline } from "../../styles/textUnderline"
+import { sideLayout } from "../../styles/sideLayout"
+import { screens } from "../../styles/utils/screens"
 
 export const Header = styled.header`
   display: flex;
@@ -27,23 +27,23 @@ export const NavBarLink = styled.a`
   text-decoration: none;
 
   &:hover {
-    ${textUnderline('var(--indigo)')}
+    ${textUnderline("var(--indigo)")}
   }
 `
 
 export const NavIllustration = styled.img`
   width: 60px;
-	transition: var(--transition);
-	cursor: pointer;
+  transition: var(--transition);
+  cursor: pointer;
 
   @media (min-width: ${screens.ipad}) {
     width: 80px;
     height: auto;
   }
 
-	&:hover {
-		transform: scale(1.1);
-	}
+  &:hover {
+    transform: scale(1.1);
+  }
 `
 
 export const NavWave = styled.img`
@@ -52,7 +52,7 @@ export const NavWave = styled.img`
   bottom: -1.1rem;
   width: 100%;
   fill: var(--dark);
-	z-index: 10;
+  z-index: 10;
 
   @media (min-width: ${screens.tablet}) {
     bottom: -1.5rem;
@@ -70,4 +70,3 @@ export const NavWave = styled.img`
     bottom: -4.75rem;
   }
 `
-

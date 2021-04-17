@@ -1,7 +1,7 @@
 /**
  * @param color: string
  * @returns string
-*/
+ */
 export const textUnderline = (color) => {
   return `
     text-decoration: underline;
