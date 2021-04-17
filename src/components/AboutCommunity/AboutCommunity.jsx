@@ -1,12 +1,15 @@
 import React from "react"
 import historyBook from "../../assets/illustrations/history-book.svg"
+import callMeDevDiscord from "../../assets/illustrations/callme-dev-discord.jpeg"
+
 import {
   AboutCommunityStyled,
   AboutCommunityTitle,
   SpanTitle,
   AboutCommunityText,
   AboutCommunityBtn,
-  AboutCommunityIcon
+  AboutCommunityIcon,
+  AboutCommunityImg
 } from "./AboutCommunity.styles"
 
 export default function AboutCommunity() {
@@ -23,7 +26,7 @@ export default function AboutCommunity() {
           Nuestra historia
         </AboutCommunityBtn>
       </div>
-
+      <AboutCommunityImg src={callMeDevDiscord} alt="callMeDev en discord" />
     </AboutCommunityStyled>
   )
 }

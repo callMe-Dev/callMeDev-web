@@ -39,7 +39,7 @@ color: var(--white);
   }
 
   @media (min-width: ${screens.ipad}) {
-    text-align: right;
+    text-align: left;
   }
 `
 
@@ -98,4 +98,18 @@ export const AboutCommunityBtn = styled.button`
 export const AboutCommunityIcon = styled.img`
   height: 35px;
   width: 35px;
+`
+
+export const AboutCommunityImg = styled.img`
+  display: block;
+  height: auto;
+  margin: 3rem auto;
+  width: 370px;
+  object-fit:cover;
+
+  @media (min-width: ${screens.ipad}) {
+    margin: 0;
+    width: 770px;
+    object-fit: cover;
+  }
 `
