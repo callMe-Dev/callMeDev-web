@@ -1,6 +1,6 @@
 import React from 'react'
 import callMeDevBigLogo from '../../assets/illustrations/big-logo.svg'
-import discordLogo from '../../assets/illustrations/discord-logo.svg';
+import discordLogo from '../../assets/illustrations/discord-logo.svg'
 
 import {HeroDiscordBtn, HeroDiscordIcon, HeroLogo, HeroStyled, HeroTextContent, HeroTitle} from './Hero.styles'
 
