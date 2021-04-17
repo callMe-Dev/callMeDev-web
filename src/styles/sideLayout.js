@@ -1,9 +1,10 @@
 import { screens } from './utils/screens'
 
-export const sideLayout = () => {
-
-  const paddingMobile = '1.7rem'
-
+/**
+ * @param paddingMobile: string
+ * @returns string
+ */
+export const sideLayout = (paddingMobile = '1.7rem') => {
   return `
 		padding: ${paddingMobile};
 

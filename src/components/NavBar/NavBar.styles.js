@@ -9,7 +9,7 @@ export const Header = styled.header`
   align-items: center;
   position: relative;
   background: var(--dark);
-  ${sideLayout}
+  ${sideLayout()}
 `
 
 export const Nav = styled.nav`
