@@ -7,7 +7,6 @@ export default function Home() {
   return (
     <HomeStyled>
       <Hero />
-      <p>Home</p>
     </HomeStyled>
   )
 }

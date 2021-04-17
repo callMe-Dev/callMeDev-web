@@ -15,6 +15,9 @@
   --pink: #e83e8c;
   --light-gray: #99aab5;
   --yellow: #F0DB4F;
+  /* Properties */
+  --radius: 15px;
+  /* Fonts */
   --poppins-family: 'Poppins', sans-serif;
   --roboto-family: 'Roboto', sans-serif;
 }
