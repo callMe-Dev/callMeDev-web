@@ -6,7 +6,6 @@
   "extends": [
     "plugin:react/recommended",
     "airbnb",
-    "prettier",
     "plugin:prettier/recommended"
   ],
   "parserOptions": {
@@ -19,9 +18,9 @@
   "plugins": ["react", "prettier"],
   "rules": {
     "eqeqeq": "error",
+    "quotes": ["warn", "double"],
     "semi": ["warn", "never"],
-    "jsx-quotes": ["warn", "prefer-single"],
-    "quotes": ["warn", "single"],
+    "jsx-quotes": ["warn", "prefer-double"],
     "no-proto": "warn",
     "no-redeclare": "error",
     "space-in-parens": "warn",
@@ -48,7 +47,8 @@
     "arrow-parens": "warn",
     "indent": ["warn", 2],
     "no-unused-vars": "error",
-    "no-console": "off"
+    "no-console": "off",
+    "prettier/prettier": "off"
   },
   "settings": {
     "import/resolver": {

@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import { sideLayout } from '../../styles/sideLayout'
-import { screens } from '../../styles/utils/screens'
+import styled from "styled-components"
+import { sideLayout } from "../../styles/sideLayout"
+import { screens } from "../../styles/utils/screens"
 
 export const HeroStyled = styled.section`
   background: var(--black);
@@ -94,7 +94,7 @@ export const HeroDiscordBtn = styled.button`
   padding: 0.8rem 2rem;
   width: auto;
   cursor: pointer;
-	transition: var(--transition);
+  transition: var(--transition);
 
   @media (min-width: ${screens.ipad}) {
     margin: 0;
@@ -103,9 +103,9 @@ export const HeroDiscordBtn = styled.button`
     margin-top: 1.6rem;
   }
 
-	&:hover {
-		filter: brightness(1.1);
-	}
+  &:hover {
+    filter: brightness(1.1);
+  }
 `
 
 export const HeroDiscordIcon = styled.img`
