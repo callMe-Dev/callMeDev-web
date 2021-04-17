@@ -1,6 +1,43 @@
+:root {
+  font-size: 16px;
+  --black: #2f353a;
+  --dark: #37393F;
+  --dark-purple: #292841;
+  --purple: #7289da;
+  --purple-gradient: linear-gradient(90deg,#8ea1e1,#7289da);
+  --blue: #00b0f4;
+  --white: #ffffff;
+  --light-color: #f3f4f5;
+  --gray: #73818f;
+  --red: #f86c6b;
+  --indigo: #6610f2;
+  --succes-color: #4dbd74;
+  --pink: #e83e8c;
+  --light-gray: #99aab5;
+  --yellow: #F0DB4F;
+  --poppins-family: 'Poppins', sans-serif;
+  --roboto-family: 'Roboto', sans-serif;
+}
+
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  background: var(--dark);
+  font-family: var(--poppins-family), -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;

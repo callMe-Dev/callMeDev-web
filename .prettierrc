@@ -3,7 +3,7 @@
   "endOfLine": "lf",
   "jsxSingleQuote": true,
   "singleQuote": true,
-  "useTabs": true,
+  "useTabs": false,
   "bracketSpacing": true,
   "semi": false,
   "quoteProps": "as-needed",
