@@ -11,9 +11,9 @@ export const Header = styled.header`
   background: var(--dark);
   ${sideLayout()}
 
-	@media (min-width: ${screens.ipad}){
-		padding-bottom: 0;
-	}
+  @media (min-width: ${screens.ipad}) {
+    padding-bottom: 0;
+  }
 `
 
 export const Nav = styled.nav`
@@ -34,10 +34,10 @@ export const NavBarLink = styled.a`
 export const NavIllustration = styled.img`
   width: 60px;
 
-	@media (min-width: ${screens.ipad}) {
-		width: 80px;
-		height: auto,
-	}
+  @media (min-width: ${screens.ipad}) {
+    width: 80px;
+    height: auto;
+  }
 `
 
 export const NavWave = styled.img`
@@ -51,12 +51,16 @@ export const NavWave = styled.img`
     bottom: -1.5rem;
   }
 
+  @media (min-width: 740px) {
+    bottom: -2.5rem;
+  }
+
   @media (min-width: ${screens.ipad}) {
-		bottom: -3.3rem;
-	}
+    bottom: -3.5rem;
+  }
 
   @media (min-width: ${screens.desk}) {
-		bottom: -4.4rem;
-	}
+    bottom: -4.75rem;
+  }
 `
 

@@ -14,7 +14,7 @@ export default function Hero() {
           Realizamos proyectos, mientras aprendemos y obtenemos experiencia.
         </HeroTextContent>
         <HeroTextContent>
-          Tambien platicamos y convivimos mas que solo como comunidad, somos amigos devs
+          Tambien platicamos y convivimos mas que solo como comunidad, somos amigos devs.
         </HeroTextContent>
         <HeroDiscordBtn type='button'>
           <HeroDiscordIcon src={discordLogo} alt='Discord logo'/>

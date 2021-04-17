@@ -1,7 +1,26 @@
 import styled from 'styled-components'
+import { sideLayout } from '../../styles/sideLayout'
 import { screens } from '../../styles/utils/screens'
 
 export const HeroStyled = styled.section`
+  background: var(--black);
+  /* Is at the beginning since the padding-top is affected by the sideLayout function */
+  ${sideLayout()}
+
+  padding-top: 3rem;
+
+  @media (min-width: ${screens.tablet}) {
+    padding-top: 5rem;
+  }
+
+  @media (min-width: ${screens.ipad}) {
+    padding-top: 6rem;
+  }
+
+  @media (min-width: ${screens.desk}) {
+    padding-top: 8rem;
+  }
+
   display: block;
 
   @media (min-width: ${screens.ipad}) {
@@ -76,8 +95,8 @@ export const HeroDiscordBtn = styled.button`
 
   @media (min-width: ${screens.ipad}) {
     margin: 0;
-    padding: 0.7rem 1.7rem;
-    font-size: 1.5rem;
+    padding: 0.6rem 1.5rem;
+    font-size: 1.3rem;
     margin-top: 1.6rem;
   }
 `

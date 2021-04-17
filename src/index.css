@@ -36,7 +36,6 @@ html {
   box-sizing: inherit;
 }
 
-
 body {
   margin: 0;
   background: var(--dark);
@@ -47,7 +46,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.App {
+  width: 100%;
 }
