@@ -1,10 +1,14 @@
-import React from "react";
-import { AboutCommunityStyled } from "./AboutCommunity.styles";
+import React from "react"
+import {
+  AboutCommunityStyled,
+  AboutCommunityTitle,
+  SpanTitle
+} from "./AboutCommunity.styles"
 
 export default function AboutCommunity() {
   return (
     <AboutCommunityStyled>
-      <p>Some content</p>
+      <AboutCommunityTitle>Sobre la <SpanTitle>comunidad</SpanTitle> </AboutCommunityTitle>
     </AboutCommunityStyled>
-  );
+  )
 }
