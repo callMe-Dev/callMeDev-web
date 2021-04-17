@@ -1,15 +1,15 @@
 import styled from 'styled-components'
-import { variables } from '../../styles/utils/variables'
-import {	textUnderline	} from '../../styles/textUnderline'
+import { textUnderline } from '../../styles/textUnderline'
+import { sideLayout } from '../../styles/sideLayout'
+import { screens } from '../../styles/utils/screens'
 
 export const Header = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.7rem;
-	position: relative;
-	margin-bottom: 3rem;
-	background: ${variables.dark};
+  position: relative;
+  background: var(--dark);
+  ${sideLayout}
 `
 
 export const Nav = styled.nav`
@@ -20,10 +20,10 @@ export const Nav = styled.nav`
 
 export const NavBarLink = styled.a`
   color: var(--white);
-	text-decoration: none;
+  text-decoration: none;
 
   &:hover {
-		${textUnderline(variables.indigo)}
+    ${textUnderline('var(--indigo)')}
   }
 `
 
@@ -32,11 +32,22 @@ export const NavIllustration = styled.img`
 `
 
 export const NavWave = styled.img`
-	position: absolute;
-	left: 0;
-	bottom: -1.9rem;
-	width: 100%;
-	fill: ${variables.dark};
-	background: #000;
+  position: absolute;
+  left: 0;
+  bottom: -1.1rem;
+  width: 100%;
+  fill: var(--dark);
+
+  @media (min-width: ${screens.tablet}) {
+    bottom: -1.5rem;
+  }
+
+  @media (min-width: ${screens.ipad}) {
+		bottom: -2rem;
+	}
+
+  @media (min-width: ${screens.desk}) {
+		bottom: -4rem;
+	}
 `
 
