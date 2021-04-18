@@ -1,13 +1,10 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "jest": true
   },
-  "extends": [
-    "plugin:react/recommended",
-    "airbnb",
-    "plugin:prettier/recommended"
-  ],
+  "extends": ["plugin:react/recommended", "airbnb", "plugin:prettier/recommended"],
   "parserOptions": {
     "ecmaFeatures": {
       "jsx": true
@@ -15,46 +12,31 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "prettier"],
+  "plugins": ["react"],
   "rules": {
     "eqeqeq": "error",
-    "quotes": ["warn", "double"],
+    "quotes": ["warn", "single"],
     "semi": ["warn", "never"],
-    "jsx-quotes": ["warn", "prefer-double"],
-    "no-proto": "warn",
-    "no-redeclare": "error",
-    "space-in-parens": "warn",
-    "capitalized-comments": "warn",
-    "react/destructuring-assignment": 0,
-    "jsx-a11y/no-static-element-interactions": 0,
-    "jsx-a11y/label-has-for": 0,
-    "camelcase": 0, // relay generates types with _ in the names, so need to allow non-camelcased,
-    "no-underscore-dangle": 0,
-    "lines-between-class-members": 0,
-    "react/static-property-placement": 0,
-    "react/state-in-constructor": 0,
-    "react/jsx-props-no-spreading": 0,
-    "react/jsx-filename-extension": [
-      1,
-      { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
-    ],
-    "no-undef": "off",
-    "no-else-return": "off",
-    "import/prefer-default-export": "off",
-    "no-param-reassign": "off",
-    "operator-linebreak": "off",
-    "implicit-arrow-linebreak": "off",
-    "arrow-parens": "warn",
+    "jsx-quotes": ["warn", "prefer-single"],
     "indent": ["warn", 2],
-    "no-unused-vars": "error",
+    "import/prefer-default-export": "off",
+    "no-proto": "warn",
     "no-console": "off",
-    "prettier/prettier": "off"
+    "arrow-parens": "warn",
+    "react/react-in-jsx-scope": 0,
+    "accessor-pairs": "warn",
+    "prettier/prettier": "off",
+    "no-empty-pattern": "warn",
+    "no-unused-vars": "error"
   },
   "settings": {
     "import/resolver": {
       "node": {
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
       }
+    },
+    "react": {
+      "version": "detect"
     }
   }
 }

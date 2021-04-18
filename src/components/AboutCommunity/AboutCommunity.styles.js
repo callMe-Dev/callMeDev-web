@@ -1,10 +1,10 @@
-import styled from "styled-components"
-import { sideLayout } from "../../styles/sideLayout"
-import { screens } from "../../styles/utils/screens"
+import styled from 'styled-components'
+import { sideLayout } from '../../styles/sideLayout'
+import { screens } from '../../styles/utils/screens'
 
 export const AboutCommunityStyled = styled.article`
   padding-top: 14rem;
-    position: relative;
+  position: relative;
   ${sideLayout()}
 
   @media (min-width: ${screens.tablet}) {
@@ -27,7 +27,7 @@ export const AboutCommunityStyled = styled.article`
   }
 `
 export const AboutCommunityTitle = styled.p`
-color: var(--white);
+  color: var(--white);
   font-weight: 600;
   font-size: 1.9rem;
   margin: 2rem 0;
@@ -105,7 +105,7 @@ export const AboutCommunityImg = styled.img`
   height: auto;
   margin: 3rem auto;
   width: 370px;
-  object-fit:cover;
+  object-fit: cover;
 
   @media (min-width: ${screens.ipad}) {
     margin: 0;

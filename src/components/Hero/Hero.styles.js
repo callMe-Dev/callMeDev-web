@@ -1,6 +1,6 @@
-import styled from "styled-components"
-import { sideLayout } from "../../styles/sideLayout"
-import { screens } from "../../styles/utils/screens"
+import styled from 'styled-components'
+import { sideLayout } from '../../styles/sideLayout'
+import { screens } from '../../styles/utils/screens'
 
 export const HeroStyled = styled.section`
   background: var(--black);

@@ -1,7 +1,7 @@
-import styled from "styled-components"
-import { textUnderline } from "../../styles/textUnderline"
-import { sideLayout } from "../../styles/sideLayout"
-import { screens } from "../../styles/utils/screens"
+import styled from 'styled-components'
+import { textUnderline } from '../../styles/textUnderline'
+import { sideLayout } from '../../styles/sideLayout'
+import { screens } from '../../styles/utils/screens'
 
 export const Header = styled.header`
   display: flex;
@@ -27,7 +27,7 @@ export const NavBarLink = styled.a`
   text-decoration: none;
 
   &:hover {
-    ${textUnderline("var(--indigo)")}
+    ${textUnderline('var(--indigo)')}
   }
 `
 
