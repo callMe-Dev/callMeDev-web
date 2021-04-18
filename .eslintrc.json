@@ -27,7 +27,8 @@
     "accessor-pairs": "warn",
     "prettier/prettier": "off",
     "no-empty-pattern": "warn",
-    "no-unused-vars": "error"
+    "no-unused-vars": "error",
+    "react/prop-types": "off"
   },
   "settings": {
     "import/resolver": {
