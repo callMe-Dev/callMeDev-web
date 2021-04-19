@@ -19,7 +19,6 @@ export default function AboutCommunity() {
         <AboutCommunityTitle>
           Sobre la <SpanTitle>comunidad</SpanTitle>{' '}
         </AboutCommunityTitle>
-        <br />
         <AboutCommunityText>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt diam
           dui, et condimentum lorem interdum quis. Aenean posuere pulvinar massa in

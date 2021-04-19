@@ -30,7 +30,8 @@ export const AboutCommunityTitle = styled.p`
   color: var(--white);
   font-weight: 600;
   font-size: 1.9rem;
-  margin: 2rem 0;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
 
   @media (min-width: ${screens.tablet}) {
     text-align: center;
@@ -40,6 +41,7 @@ export const AboutCommunityTitle = styled.p`
 
   @media (min-width: ${screens.ipad}) {
     text-align: left;
+    margin-left: 0;
   }
 `
 
@@ -60,7 +62,7 @@ export const AboutCommunityText = styled.p`
 
   @media (min-width: ${screens.ipad}) {
     text-align: left;
-    width: 360px;
+    width: 400px;
     margin-bottom: 1rem;
   }
 `
@@ -104,12 +106,22 @@ export const AboutCommunityImg = styled.img`
   display: block;
   height: auto;
   margin: 3rem auto;
-  width: 370px;
+  width: 300px;
   object-fit: cover;
+
+  @media (min-width: ${screens.mobile}) {
+    width: 320px;
+    height: 200px;
+  }
 
   @media (min-width: ${screens.ipad}) {
     margin: 0;
-    width: 770px;
+    width: 550px;
+    height: auto;
     object-fit: cover;
+  }
+
+  @media (min-width: ${screens.desk}) {
+    width: 500px;
   }
 `

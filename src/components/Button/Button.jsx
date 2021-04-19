@@ -6,8 +6,7 @@ import { ButtonIcon, ButtonStyled } from './Button.styles'
  * @param btnText: string
  * @param btnImg: string
  * @param btnImgAlt: string
- * @param btnBackground: string
- * @param btnTextColor: string
+ * @param theme: string
  *
  * @returns JSX.Button
  */

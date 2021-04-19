@@ -19,14 +19,20 @@ export const ButtonStyled = styled.button`
   cursor: pointer;
   transition: var(--transition);
 
-  /* background: ${(props) => props.btnBackground}; */
-  /* color: ${(props) => props.btnTextColor}; */
+  /* For new themes add a color for the css variables and match the background and text */
 
   ${(props) =>
     props.theme === 'blue' &&
     css`
       color: var(--white);
       background: var(--blue);
+    `}
+
+  ${(props) =>
+    props.theme === 'purple' &&
+    css`
+      color: var(--white);
+      background: var(--purple);
     `}
 
   @media (min-width: ${screens.ipad}) {
