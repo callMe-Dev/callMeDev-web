@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
 import { screens } from '../../styles/utils/screens'
+import { userNoSelect } from '../../styles/userNoSelect'
 
 export const ButtonStyled = styled.button`
   /* width: 19rem; */
@@ -19,8 +20,9 @@ export const ButtonStyled = styled.button`
   cursor: pointer;
   transition: var(--transition);
 
-  /* For new themes add a color for the css variables and match the background and text */
+  ${userNoSelect()}
 
+  /* For new themes add a color for the css variables and match the background and text */
   ${(props) =>
     props.theme === 'blue' &&
     css`
