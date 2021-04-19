@@ -19,12 +19,16 @@ export default function AboutCommunity() {
           Sobre la <SpanTitle>comunidad</SpanTitle>{' '}
         </AboutCommunityTitle>
         <AboutCommunityText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt diam
-          dui, et condimentum lorem interdum quis. Aenean posuere pulvinar massa in
-          scelerisque. Vivamus elementum bibendum elit, Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit. Sed tincidunt diam dui, et condimentum lorem
-          interdum quis. Aenean posuere pulvinar massa in scelerisque. Vivamus
-          elementum bibendum elit
+          Somos una comunidad de programadores y diseñadores, que crea proyectos para
+          poder aprender y obtener experiencia antes de y para conseguir un empleo.
+          <br />
+          <br />
+          Creamos proyectos relacionado a todo el mundo TI, como la creacion de
+          paginas Web, Backend, Bots de Discord e Interfaces de Usuario
+          <br />
+          <br />
+          Tambien ayudamos a resolver dudas de aquellas personas interesadas en
+          aprender a programar
         </AboutCommunityText>
         <Button
           btnImg={historyBook}

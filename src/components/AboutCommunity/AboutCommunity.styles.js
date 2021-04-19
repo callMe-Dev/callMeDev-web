@@ -32,9 +32,9 @@ export const AboutCommunityTitle = styled.p`
   font-size: 1.9rem;
   margin-top: 4rem;
   margin-bottom: 1rem;
+  text-align: center;
 
   @media (min-width: ${screens.tablet}) {
-    text-align: center;
     width: 350px;
     margin: 2rem auto;
   }
@@ -62,7 +62,7 @@ export const AboutCommunityText = styled.p`
 
   @media (min-width: ${screens.ipad}) {
     text-align: left;
-    width: 400px;
+    width: 450px;
     margin-bottom: 1rem;
   }
 `
@@ -71,12 +71,18 @@ export const AboutCommunityImg = styled.img`
   display: block;
   height: auto;
   margin: 3rem auto;
-  width: 300px;
+  width: 270px;
   object-fit: cover;
 
   @media (min-width: ${screens.mobile}) {
     width: 320px;
     height: 200px;
+  }
+
+  @media (min-width: ${screens.tablet}) {
+    width: 500px;
+    height: 370px;
+    object-fit: contain;
   }
 
   @media (min-width: ${screens.ipad}) {
