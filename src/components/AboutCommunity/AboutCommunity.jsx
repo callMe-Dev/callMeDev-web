@@ -2,11 +2,10 @@ import React from 'react'
 import historyBook from '../../assets/illustrations/history-book.svg'
 import callMeDevDiscord from '../../assets/illustrations/callme-dev-discord.jpeg'
 import Button from '../Button/Button'
+import ContentTitle from '../ContentTitle/ContentTitle'
 
 import {
   AboutCommunityStyled,
-  AboutCommunityTitle,
-  SpanTitle,
   AboutCommunityText,
   AboutCommunityImg,
 } from './AboutCommunity.styles'
@@ -15,9 +14,11 @@ export default function AboutCommunity() {
   return (
     <AboutCommunityStyled>
       <div>
-        <AboutCommunityTitle>
-          Sobre la <SpanTitle>comunidad</SpanTitle>{' '}
-        </AboutCommunityTitle>
+        <ContentTitle
+          titleText='Sobre la'
+          titleSpan='Comunidad'
+          titleColor='var(--yellow)'
+        />
         <AboutCommunityText>
           Somos una comunidad de programadores y diseñadores, que crea proyectos para
           poder aprender y obtener experiencia antes de y para conseguir un empleo.
