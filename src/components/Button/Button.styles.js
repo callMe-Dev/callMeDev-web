@@ -3,7 +3,6 @@ import { screens } from '../../styles/utils/screens'
 import { userNoSelect } from '../../styles/userNoSelect'
 
 export const ButtonStyled = styled.button`
-  /* width: 19rem; */
   align-items: center;
   border-radius: var(--radius);
   border: none;

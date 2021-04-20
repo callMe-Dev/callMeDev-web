@@ -7,18 +7,20 @@ import { ButtonIcon, ButtonStyled } from './Button.styles'
  * @param btnImg: string
  * @param btnImgAlt: string
  * @param theme: string
+ * @param withImg: boolean
  *
- * @returns JSX.Button
+ * @returns JSX.Element
  */
 export default function Button({
   btnText = '',
   btnImg = '',
   btnImgAlt = '',
   theme = '',
+  withImg = true,
 }) {
   return (
     <ButtonStyled type='button' theme={theme}>
-      <ButtonIcon src={btnImg} alt={btnImgAlt} />
+      {withImg ? <ButtonIcon src={btnImg} alt={btnImgAlt} /> : ''}
       {btnText}
     </ButtonStyled>
   )
