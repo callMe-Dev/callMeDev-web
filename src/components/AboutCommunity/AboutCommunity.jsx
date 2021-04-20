@@ -1,14 +1,13 @@
 import React from 'react'
 import historyBook from '../../assets/illustrations/history-book.svg'
 import callMeDevDiscord from '../../assets/illustrations/callme-dev-discord.jpeg'
+import Button from '../Button/Button'
 
 import {
   AboutCommunityStyled,
   AboutCommunityTitle,
   SpanTitle,
   AboutCommunityText,
-  AboutCommunityBtn,
-  AboutCommunityIcon,
   AboutCommunityImg,
 } from './AboutCommunity.styles'
 
@@ -19,19 +18,24 @@ export default function AboutCommunity() {
         <AboutCommunityTitle>
           Sobre la <SpanTitle>comunidad</SpanTitle>{' '}
         </AboutCommunityTitle>
-        <br />
         <AboutCommunityText>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt diam
-          dui, et condimentum lorem interdum quis. Aenean posuere pulvinar massa in
-          scelerisque. Vivamus elementum bibendum elit, Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit. Sed tincidunt diam dui, et condimentum lorem
-          interdum quis. Aenean posuere pulvinar massa in scelerisque. Vivamus
-          elementum bibendum elit
+          Somos una comunidad de programadores y diseñadores, que crea proyectos para
+          poder aprender y obtener experiencia antes de y para conseguir un empleo.
+          <br />
+          <br />
+          Creamos proyectos relacionado a todo el mundo TI, como la creacion de
+          paginas Web, Backend, Bots de Discord e Interfaces de Usuario
+          <br />
+          <br />
+          Tambien ayudamos a resolver dudas de aquellas personas interesadas en
+          aprender a programar
         </AboutCommunityText>
-        <AboutCommunityBtn type='button'>
-          <AboutCommunityIcon src={historyBook} alt='Conoce nuestra historia' />
-          Nuestra historia
-        </AboutCommunityBtn>
+        <Button
+          btnImg={historyBook}
+          btnImgAlt='Conoce nuestra historia'
+          theme='blue'
+          btnText='Nuestra historia'
+        />
       </div>
       <AboutCommunityImg src={callMeDevDiscord} alt='callMeDev en discord' />
     </AboutCommunityStyled>
