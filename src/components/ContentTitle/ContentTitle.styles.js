@@ -6,6 +6,7 @@ export const ContentTitleStyled = styled.h1`
   font-weight: 600;
   font-size: 1.9rem;
   margin-top: 4rem;
+  margin-top: ${(props) => (props.withMarginTop ? '4rem' : '0')};
   margin-bottom: 1rem;
   text-align: center;
 

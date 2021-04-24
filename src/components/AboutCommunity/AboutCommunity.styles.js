@@ -5,6 +5,7 @@ import { screens } from '../../styles/utils/screens'
 export const AboutCommunityStyled = styled.article`
   padding-top: 14rem;
   position: relative;
+  margin-bottom: 4rem;
   ${sideLayout()}
 
   @media (min-width: ${screens.tablet}) {
