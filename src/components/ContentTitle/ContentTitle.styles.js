@@ -17,7 +17,7 @@ export const ContentTitleStyled = styled.h1`
 
   @media (min-width: ${screens.ipad}) {
     text-align: left;
-    margin-left: 0;
+    margin: 2rem 0;
   }
 `
 

@@ -24,7 +24,7 @@ export const AboutCommunityStyled = styled.article`
 
   @media (min-width: ${screens.ipad}) {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 `
 

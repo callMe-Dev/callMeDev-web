@@ -2,8 +2,14 @@ import React from 'react'
 import waveToUpBlack from '../../assets/waves/waveToUp-black.svg'
 import ContentTitle from '../ContentTitle/ContentTitle'
 import Amistad from './Amistad/Amistad'
+import Equipo from './Equipo/Equipo'
 
-import { OurFeaturesSection, OurFeaturesWave } from './OurFeatures.styles'
+import {
+  OurFeaturesFlex,
+  OurFeaturesSection,
+  OurFeaturesWave,
+  Invisible,
+} from './OurFeatures.styles'
 
 export default function OurFeatures() {
   return (
@@ -12,13 +18,17 @@ export default function OurFeatures() {
         src={waveToUpBlack}
         alt='Ilustracion tipo ola en Nuestras Caracteristicas'
       />
-      <ContentTitle
-        titleText='Nuestras'
-        titleSpan='Features'
-        titleColor='var(--green)'
-        withMarginTop={false}
-      />
+      <OurFeaturesFlex>
+        <ContentTitle
+          titleText='Nuestras'
+          titleSpan='Features'
+          titleColor='var(--green)'
+          withMarginTop={false}
+        />
+        <Invisible>Invisible</Invisible>
+      </OurFeaturesFlex>
       <Amistad />
+      <Equipo />
     </OurFeaturesSection>
   )
 }
