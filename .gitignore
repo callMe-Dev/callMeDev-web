@@ -186,3 +186,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Eslint cache
+.eslintcache
+.cache
