@@ -22,6 +22,18 @@ export const OurFeaturesWave = styled.img`
   width: 100%;
 
   ${userNoSelect()}
+
+  @media (min-width: ${screens.tablet}) {
+    top: -2.7rem;
+  }
+
+  @media (min-width: ${screens.ipad}) {
+    top: -3.7rem;
+  }
+
+  @media (min-width: ${screens.desk}) {
+    top: -4.7rem;
+  }
 `
 
 export const OurFeaturesFlex = styled.div`

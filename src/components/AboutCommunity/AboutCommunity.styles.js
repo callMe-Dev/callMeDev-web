@@ -14,10 +14,12 @@ export const AboutCommunityStyled = styled.article`
 
   @media (min-width: ${screens.ipad}) {
     padding-top: 16rem;
+    margin-bottom: 9rem;
   }
 
   @media (min-width: ${screens.desk}) {
     padding-top: 18rem;
+    margin-bottom: 14rem;
   }
 
   display: block;

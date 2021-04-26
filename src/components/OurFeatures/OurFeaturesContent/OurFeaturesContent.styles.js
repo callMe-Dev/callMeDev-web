@@ -19,6 +19,7 @@ export const OurFeaturesImg = styled.img`
   display: block;
   margin: 0 auto;
   transition: var(--transition);
+  width: 300px;
 
   ${userNoSelect()}
 

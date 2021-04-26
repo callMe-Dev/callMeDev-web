@@ -1,8 +1,10 @@
 import React from 'react'
 import waveToUpBlack from '../../assets/waves/waveToUp-black.svg'
 import ContentTitle from '../ContentTitle/ContentTitle'
+
 import Amistad from './Amistad/Amistad'
 import Equipo from './Equipo/Equipo'
+import Crecer from './Crecer/Crecer'
 
 import {
   OurFeaturesFlex,
@@ -29,6 +31,7 @@ export default function OurFeatures() {
       </OurFeaturesFlex>
       <Amistad />
       <Equipo />
+      <Crecer />
     </OurFeaturesSection>
   )
 }
