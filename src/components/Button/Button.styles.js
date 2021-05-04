@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
-import { screens } from '../../styles/utils/screens'
-import { userNoSelect } from '../../styles/userNoSelect'
+import { screens } from '../../styles/screens'
+import { userNoSelect } from '../../styles/utils/userNoSelect'
 
 export const ButtonStyled = styled.button`
   border-radius: var(--radius);

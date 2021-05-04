@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { sideLayout } from '../../styles/sideLayout'
-import { screens } from '../../styles/utils/screens'
+import { sideLayout } from '../../styles/utils/sideLayout'
+import { screens } from '../../styles/screens'
 
 export const HowCollaborateStyled = styled.section`
   ${sideLayout()}
@@ -38,6 +38,11 @@ export const HowCollaborateImg = styled.img`
 
   @media (min-width: ${screens.$600}) {
     width: 400px;
+    transition: var(--transition);
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 
   @media (min-width: ${screens.ipad}) {

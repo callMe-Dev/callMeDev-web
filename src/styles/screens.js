@@ -11,4 +11,5 @@ export const screens = {
   desk: '1240px',
   $600: '600px',
   $800: '800px',
+  $1024: '1024px',
 }

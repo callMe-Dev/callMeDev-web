@@ -1,5 +1,5 @@
 import { css } from 'styled-components'
-import { screens } from './utils/screens'
+import { screens } from '../screens'
 
 /**
  * @param paddingMobile?: string

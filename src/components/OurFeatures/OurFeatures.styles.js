@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { screens } from '../../styles/utils/screens'
-import { userNoSelect } from '../../styles/userNoSelect'
+import { screens } from '../../styles/screens'
+import { userNoSelect } from '../../styles/utils/userNoSelect'
 
 export const OurFeaturesSection = styled.section`
   background: var(--black);

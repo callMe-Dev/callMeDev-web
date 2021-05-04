@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { sideLayout } from '../../styles/sideLayout'
-import { screens } from '../../styles/utils/screens'
+import { sideLayout } from '../../styles/utils/sideLayout'
+import { screens } from '../../styles/screens'
 
 export const AboutCommunityStyled = styled.section`
   padding-top: 14rem;
@@ -62,6 +62,11 @@ export const AboutCommunityImg = styled.img`
     width: 500px;
     height: 370px;
     object-fit: contain;
+    transition: var(--transition);
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 
   @media (min-width: ${screens.ipad}) {

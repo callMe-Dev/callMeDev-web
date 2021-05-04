@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { sideLayout } from '../../styles/sideLayout'
-import { screens } from '../../styles/utils/screens'
+import { sideLayout } from '../../styles/utils/sideLayout'
+import { screens } from '../../styles/screens'
 
 export const HeroStyled = styled.section`
   background: var(--black);
@@ -35,6 +35,19 @@ export const HeroLogo = styled.img`
   height: auto;
   margin: 0 auto;
   width: 270px;
+
+  @media (min-width: ${screens.tablet}) {
+    transition: var(--transition);
+
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+
+    &:active {
+      transform: rotate(180deg);
+    }
+  }
 
   @media (min-width: ${screens.ipad}) {
     margin: 0;
@@ -123,6 +136,10 @@ export const HeroWaveToDown = styled.img`
     bottom: -3rem;
   }
 
+  @media (min-width: ${screens.$600}) {
+    bottom: -5rem;
+  }
+
   @media (min-width: ${screens.tablet}) {
     bottom: -5.3rem;
   }
@@ -131,12 +148,16 @@ export const HeroWaveToDown = styled.img`
     bottom: -6.3rem;
   }
 
-  @media (min-width: 830px) {
+  @media (min-width: ${screens.$800}) {
     bottom: -7.3rem;
   }
 
   @media (min-width: ${screens.ipad}) {
     bottom: -8.3rem;
+  }
+
+  @media (min-width: ${screens.$1024}) {
+    bottom: -9rem;
   }
 
   @media (min-width: ${screens.desk}) {

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import { textUnderline } from '../../styles/textUnderline'
-import { sideLayout } from '../../styles/sideLayout'
-import { screens } from '../../styles/utils/screens'
+import { textUnderline } from '../../styles/utils/textUnderline'
+import { sideLayout } from '../../styles/utils/sideLayout'
+import { screens } from '../../styles/screens'
 
 export const Header = styled.header`
   display: flex;
@@ -20,6 +20,14 @@ export const Nav = styled.nav`
   display: flex;
   align-items: center;
   gap: 0 1rem;
+
+  @media (min-width: ${screens.tablet}) {
+    gap: 0 1.5rem;
+  }
+
+  @media (min-width: ${screens.ipad}) {
+    gap: 0 2.5rem;
+  }
 `
 
 export const NavBarLink = styled.a`
@@ -28,6 +36,14 @@ export const NavBarLink = styled.a`
 
   &:hover {
     ${textUnderline('var(--indigo)')}
+  }
+
+  @media (min-width: ${screens.$600}) {
+    font-size: 1.2rem;
+  }
+
+  @media (min-width: ${screens.desk}) {
+    font-size: 1.3rem;
   }
 `
 
