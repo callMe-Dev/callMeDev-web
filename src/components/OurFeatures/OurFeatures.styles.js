@@ -6,16 +6,22 @@ export const OurFeaturesSection = styled.section`
   background: var(--black);
   position: relative;
   padding-top: 4rem;
+  margin-bottom: 10rem;
+
+  @media (min-width: ${screens.tablet}) {
+    margin-bottom: 15rem;
+  }
 
   @media (min-width: ${screens.ipad}) {
     padding-top: 6.5rem;
+    margin-bottom: 20rem;
   }
 
   @media (min-width: ${screens.desk}) {
     padding-top: 10rem;
   }
 `
-export const OurFeaturesWave = styled.img`
+export const OurFeaturesWaveTop = styled.img`
   position: absolute;
   top: -1.5rem;
   left: 0;
@@ -33,6 +39,25 @@ export const OurFeaturesWave = styled.img`
 
   @media (min-width: ${screens.desk}) {
     top: -4.7rem;
+  }
+`
+
+export const OurFeaturesWaveBottom = styled.img`
+  position: absolute;
+  bottom: -3.2rem;
+  left: 0;
+  width: 100%;
+
+  @media (min-width: ${screens.$600}) {
+    bottom: -5rem;
+  }
+
+  @media (min-width: ${screens.tablet}) {
+    bottom: -6.1rem;
+  }
+
+  @media (min-width: ${screens.ipad}) {
+    bottom: -11rem;
   }
 `
 
