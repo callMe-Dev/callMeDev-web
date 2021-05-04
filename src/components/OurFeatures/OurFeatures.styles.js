@@ -6,7 +6,7 @@ export const OurFeaturesSection = styled.section`
   background: var(--black);
   position: relative;
   padding-top: 4rem;
-  margin-bottom: 3rem;
+  margin-bottom: 7rem;
 
   @media (min-width: ${screens.ipad}) {
     padding-top: 6.5rem;
@@ -52,8 +52,12 @@ export const OurFeaturesWaveBottom = styled.img`
     bottom: -6.1rem;
   }
 
+  @media (min-width: ${screens.$800}) {
+    bottom: -7rem;
+  }
+
   @media (min-width: ${screens.ipad}) {
-    bottom: -11rem;
+    bottom: -8.8rem;
   }
 `
 

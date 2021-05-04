@@ -10,4 +10,5 @@ export const screens = {
   ipad: '1000px',
   desk: '1240px',
   $600: '600px',
+  $800: '800px',
 }

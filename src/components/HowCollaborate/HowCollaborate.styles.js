@@ -7,6 +7,8 @@ export const HowCollaborateStyled = styled.section`
 
   @media (min-width: ${screens.ipad}) {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
 `
 
@@ -19,6 +21,7 @@ export const HowCollaborateText = styled.p`
   @media (min-width: ${screens.$600}) {
     width: 450px;
     margin: 0 auto;
+    line-height: 1.7;
   }
 
   @media (min-width: ${screens.ipad}) {
@@ -35,5 +38,9 @@ export const HowCollaborateImg = styled.img`
 
   @media (min-width: ${screens.$600}) {
     width: 400px;
+  }
+
+  @media (min-width: ${screens.ipad}) {
+    margin: 0;
   }
 `
