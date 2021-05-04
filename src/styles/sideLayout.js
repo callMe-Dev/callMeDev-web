@@ -1,7 +1,7 @@
 import { screens } from './utils/screens'
 
 /**
- * @param paddingMobile: string
+ * @param paddingMobile?: string
  * @returns string
  */
 export const sideLayout = (paddingMobile = '1.7rem') => {
