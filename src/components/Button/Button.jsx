@@ -21,7 +21,7 @@ export default function Button({
   return (
     <ButtonStyled type='button' theme={theme}>
       {withImg ? <ButtonIcon src={btnImg} alt={btnImgAlt} /> : ''}
-      {btnText}
+      <span>{btnText}</span>
     </ButtonStyled>
   )
 }

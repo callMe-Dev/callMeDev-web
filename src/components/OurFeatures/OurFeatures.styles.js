@@ -6,15 +6,11 @@ export const OurFeaturesSection = styled.section`
   background: var(--black);
   position: relative;
   padding-top: 4rem;
-  margin-bottom: 10rem;
-
-  @media (min-width: ${screens.tablet}) {
-    margin-bottom: 15rem;
-  }
+  margin-bottom: 3rem;
 
   @media (min-width: ${screens.ipad}) {
     padding-top: 6.5rem;
-    margin-bottom: 20rem;
+    margin-bottom: 15rem;
   }
 
   @media (min-width: ${screens.desk}) {
