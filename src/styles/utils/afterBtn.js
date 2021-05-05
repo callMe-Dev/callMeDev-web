@@ -2,11 +2,13 @@ import { css } from 'styled-components'
 
 const keyFrame = css`
   @keyframes fadeIn {
-    99% {
+    90% {
       visibility: hidden;
+      transform: translate(0, 0);
     }
     100% {
       visibility: visible;
+      transform: translate(4.5rem, 0px);
     }
   }
 `
@@ -28,32 +30,28 @@ const commonAfterStyles = css`
   ${keyFrame}
   visibility: hidden;
 
-  display: block;
-  position: absolute;
-  padding: 1rem;
-  opacity: 1;
   background: var(--dark-purple);
-  color: var(--white);
   border-radius: var(--radius);
+  color: var(--white);
+  display: block;
+  font-size: 0.75rem;
+  padding: 0.5rem 0.8rem;
+  position: absolute;
+
+  transition: transform var(--transition);
+
   animation: 0.4s fadeIn;
   animation-fill-mode: forwards;
-  transition: var(--transition);
   -webkit-transition: var(--transition);
 `
 
-/**
- *
- * @param {string} content
- * @param {number} left
- * @param {number} top
- * @param {string} theme
- *
- * @returns ThemedCssFunction<DefaultTheme>
- */
 export const navBarImgAfter = css`
   ${commonAfterStyles}
 
-  content: 'Navbar';
-  left: 0rem;
+  content: 'Disfruta de la pagina :D';
+  ${'' /* left: 4.5rem; */}
+  left: 0;
   top: 0rem;
+  width: 100px;
+  background: var(--black);
 `

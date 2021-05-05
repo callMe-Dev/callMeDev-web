@@ -3,6 +3,7 @@ import { textUnderline } from '../../styles/utils/textUnderline'
 import { sideLayout } from '../../styles/utils/sideLayout'
 import { screens } from '../../styles/screens'
 import { navBarImgAfter } from '../../styles/utils/afterBtn'
+import { userNoSelect } from '../../styles/utils/userNoSelect'
 
 export const Header = styled.header`
   display: flex;
@@ -34,9 +35,12 @@ export const Nav = styled.nav`
 export const NavBarLink = styled.a`
   color: var(--white);
   text-decoration: none;
+  transition: transform var(--transition);
+  ${userNoSelect}
 
   &:hover {
     ${textUnderline('var(--indigo)')}
+    transform: scale(1.05);
   }
 
   @media (min-width: ${screens.$600}) {
@@ -63,6 +67,7 @@ export const NavIllustration = styled.img`
   transition: var(--transition);
   cursor: pointer;
   appearance: none;
+  ${userNoSelect()}
 
   @media (min-width: ${screens.ipad}) {
     width: 80px;
