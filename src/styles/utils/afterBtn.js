@@ -30,7 +30,7 @@ const commonAfterStyles = css`
   ${keyFrame}
   visibility: hidden;
 
-  background: var(--dark-purple);
+  background: var(--black);
   border-radius: var(--radius);
   color: var(--white);
   display: block;
@@ -53,5 +53,12 @@ export const navBarImgAfter = css`
   left: 0;
   top: 0rem;
   width: 100px;
-  background: var(--black);
+`
+
+export const howCollaborateGithubAfter = css`
+  ${commonAfterStyles}
+
+  content: 'Unete a nuestra organizacion! 🌟';
+  left: 1rem;
+  top: -1rem;
 `

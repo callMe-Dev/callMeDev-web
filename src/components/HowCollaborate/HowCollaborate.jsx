@@ -1,15 +1,16 @@
 import React from 'react'
 
 import ContentTitle from '../ContentTitle/ContentTitle'
-import Button from '../Button/Button'
 import githubLogo from '../../assets/illustrations/github-logo.svg'
 import collaboratorImg from '../../assets/illustrations/collaborator.svg'
 
 import {
+  GithubButton,
   HowCollaborateImg,
   HowCollaborateStyled,
   HowCollaborateText,
 } from './HowCollaborate.styles'
+import Button from '../Button/Button'
 
 export default function HowCollaborate() {
   return (
@@ -30,12 +31,14 @@ export default function HowCollaborate() {
           mollis enim, et interdum turpis. Sed sagittis volutpat elit et interdum.
           Aliquam hendrerit velit mi, in c
         </HowCollaborateText>
-        <Button
-          btnText='Github'
-          btnImg={githubLogo}
-          btnImgAlt='Github'
-          theme='black'
-        />
+        <GithubButton>
+          <Button
+            btnText='Github'
+            btnImg={githubLogo}
+            btnImgAlt='Github'
+            theme='black'
+          />
+        </GithubButton>
       </div>
       <HowCollaborateImg src={collaboratorImg} alt='Colaboraciones' />
     </HowCollaborateStyled>

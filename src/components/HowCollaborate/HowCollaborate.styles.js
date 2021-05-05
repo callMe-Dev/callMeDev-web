@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { howCollaborateGithubAfter } from '../../styles/utils/afterBtn'
 import { sideLayout } from '../../styles/utils/sideLayout'
 import { screens } from '../../styles/screens'
 
@@ -49,5 +50,16 @@ export const HowCollaborateImg = styled.img`
 
   @media (min-width: ${screens.ipad}) {
     margin: 0;
+  }
+`
+
+export const GithubButton = styled.div`
+  position: relative;
+  display: inline-block;
+
+  &:hover {
+    &:after {
+      ${howCollaborateGithubAfter}
+    }
   }
 `
