@@ -27,6 +27,8 @@ export const HowCollaborateText = styled.p`
   @media (min-width: ${screens.ipad}) {
     text-align: left;
     margin-bottom: 1rem;
+    font-size: 1.2rem;
+    width: 500px;
   }
 `
 

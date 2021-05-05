@@ -23,10 +23,12 @@ export default function HowCollaborate() {
         <HowCollaborateText>
           Praesent eu maximus sapien. Proin viverra iaculis suscipit. Ut id rhoncus
           lorem, at consectetur turpis. Aenean malesuada sollicitudin eros nec
-          mattis. Fusce interdum vehicula massa nec viverra. In non sollicitudin mi.
-          Nulla tincidunt eleifend auctor. Integer porttitor mollis enim, et interdum
-          turpis. Sed sagittis volutpat elit et interdum. Aliquam hendrerit velit mi,
-          in c
+          mattis. Fusce interdum vehicula massa nec viverra.
+          <br />
+          <br />
+          In non sollicitudin mi. Nulla tincidunt eleifend auctor. Integer porttitor
+          mollis enim, et interdum turpis. Sed sagittis volutpat elit et interdum.
+          Aliquam hendrerit velit mi, in c
         </HowCollaborateText>
         <Button
           btnText='Github'
