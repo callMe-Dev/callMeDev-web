@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { textUnderline } from '../../styles/utils/textUnderline'
 import { sideLayout } from '../../styles/utils/sideLayout'
 import { screens } from '../../styles/screens'
+import { navBarImgAfter } from '../../styles/utils/afterBtn'
 
 export const Header = styled.header`
   display: flex;
@@ -47,10 +48,21 @@ export const NavBarLink = styled.a`
   }
 `
 
+export const NavIllustrationDiv = styled.div`
+  position: relative;
+
+  &:hover {
+    &:after {
+      ${navBarImgAfter}
+    }
+  }
+`
+
 export const NavIllustration = styled.img`
   width: 60px;
   transition: var(--transition);
   cursor: pointer;
+  appearance: none;
 
   @media (min-width: ${screens.ipad}) {
     width: 80px;
