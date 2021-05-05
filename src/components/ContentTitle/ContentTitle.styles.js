@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { screens } from '../../styles/utils/screens'
+import { screens } from '../../styles/screens'
 
 export const ContentTitleStyled = styled.h1`
   color: var(--white);

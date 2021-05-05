@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import { sideLayout } from '../../../styles/sideLayout'
-import { screens } from '../../../styles/utils/screens'
-import { userNoSelect } from '../../../styles/userNoSelect'
+import { sideLayout } from '../../../styles/utils/sideLayout'
+import { screens } from '../../../styles/screens'
+import { userNoSelect } from '../../../styles/utils/userNoSelect'
 
 export const OurFeaturesArticle = styled.article`
   margin-top: 3rem;
@@ -10,7 +10,7 @@ export const OurFeaturesArticle = styled.article`
 
   @media (min-width: ${screens.ipad}) {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-direction: ${(props) => (props.flexReverse ? 'row-reverse' : 'row')};
   }
 `

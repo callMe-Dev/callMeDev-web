@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { screens } from '../../../styles/utils/screens'
+import { screens } from '../../../styles/screens'
 
 export const EquipoStyled = styled.div`
   margin: 6rem 0;

@@ -3,13 +3,13 @@ import React from 'react'
 import { ButtonIcon, ButtonStyled } from './Button.styles'
 
 /**
- * @param btnText: string
- * @param btnImg: string
- * @param btnImgAlt: string
- * @param theme: string
- * @param withImg: boolean
+ * @param { string } btnText
+ * @param { string } btnImg
+ * @param { string } btnImgAlt
+ * @param { string } theme
+ * @param { boolean } withImg
  *
- * @returns JSX.Element
+ * @returns {JSX.Element}
  */
 export default function Button({
   btnText = '',
@@ -21,7 +21,7 @@ export default function Button({
   return (
     <ButtonStyled type='button' theme={theme}>
       {withImg ? <ButtonIcon src={btnImg} alt={btnImgAlt} /> : ''}
-      {btnText}
+      <span>{btnText}</span>
     </ButtonStyled>
   )
 }

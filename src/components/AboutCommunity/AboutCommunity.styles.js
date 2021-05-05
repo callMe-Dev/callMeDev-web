@@ -1,8 +1,8 @@
 import styled from 'styled-components'
-import { sideLayout } from '../../styles/sideLayout'
-import { screens } from '../../styles/utils/screens'
+import { sideLayout } from '../../styles/utils/sideLayout'
+import { screens } from '../../styles/screens'
 
-export const AboutCommunityStyled = styled.article`
+export const AboutCommunityStyled = styled.section`
   padding-top: 14rem;
   position: relative;
   margin-bottom: 4rem;
@@ -21,8 +21,6 @@ export const AboutCommunityStyled = styled.article`
     padding-top: 18rem;
     margin-bottom: 14rem;
   }
-
-  display: block;
 
   @media (min-width: ${screens.ipad}) {
     display: flex;
@@ -64,11 +62,15 @@ export const AboutCommunityImg = styled.img`
     width: 500px;
     height: 370px;
     object-fit: contain;
+    transition: var(--transition);
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 
   @media (min-width: ${screens.ipad}) {
     margin: 0;
-    width: 550px;
     height: auto;
     object-fit: cover;
   }

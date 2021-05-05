@@ -1,9 +1,8 @@
 import styled, { css } from 'styled-components'
-import { screens } from '../../styles/utils/screens'
-import { userNoSelect } from '../../styles/userNoSelect'
+import { screens } from '../../styles/screens'
+import { userNoSelect } from '../../styles/utils/userNoSelect'
 
 export const ButtonStyled = styled.button`
-  align-items: center;
   border-radius: var(--radius);
   border: none;
   column-gap: 1rem;
@@ -11,6 +10,7 @@ export const ButtonStyled = styled.button`
   font-size: 1.2rem;
   font-weight: 500;
   justify-content: center;
+  align-items: center;
   margin: 0 auto;
   margin-top: 1.6rem;
   outline: none;
@@ -34,6 +34,14 @@ export const ButtonStyled = styled.button`
     css`
       color: var(--white);
       background: var(--purple);
+    `}
+
+
+    ${(props) =>
+    props.theme === 'black' &&
+    css`
+      color: var(--white);
+      background: #101214;
     `}
 
   @media (min-width: ${screens.ipad}) {

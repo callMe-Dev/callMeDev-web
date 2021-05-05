@@ -15,15 +15,15 @@ import {
 export default function Hero() {
   return (
     <HeroStyled>
-      <HeroLogo src={callMeDevBigLogo} alt='callMeDev logo' />
+      <HeroLogo src={callMeDevBigLogo} alt='callMeDev logo' title='callMeDev' />
       <div>
         <HeroTitle>Unete a nuestra comunidad de programadores :D</HeroTitle>
         <HeroTextContent>
           Realizamos proyectos, mientras aprendemos y obtenemos experiencia.
         </HeroTextContent>
         <HeroTextContent>
-          Tambien platicamos y convivimos mas que solo como comunidad, somos amigos
-          devs.
+          Tambien platicamos y convivimos como comunidad mientras compartimos
+          experiencias y conocimiento
         </HeroTextContent>
         <Button
           btnText='Unete con Discord'

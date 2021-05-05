@@ -3,12 +3,12 @@ import React from 'react'
 import { ContentTitleStyled, ContentTitleSpan } from './ContentTitle.styles'
 
 /**
- * @param titleText: string
- * @param titleSpan: string
- * @param titleColor: strig
- * @param withMarginTop: boolean
+ * @param {string} titleText
+ * @param {string} titleSpan
+ * @param {string} titleColor
+ * @param {boolean} withMarginTop
  *
- * @returns JSX.Element
+ * @returns {JSX.Element}
  */
 export default function ContentTitle({
   titleText,
