@@ -2,8 +2,8 @@ import { css } from 'styled-components'
 import { screens } from '../screens'
 
 /**
- * @param paddingMobile?: string
- * @returns string
+ * @param {string} paddingMobile
+ * @returns ThemedCssFunction<DefaultTheme>
  */
 export const sideLayout = (paddingMobile = '1.7rem') => {
   return css`

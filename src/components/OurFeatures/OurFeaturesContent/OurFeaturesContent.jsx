@@ -8,15 +8,15 @@ import {
 
 /**
  *
- * @param image: string
- * @param altImage: string
- * @param subTitle: string
- * @param subTitleInColor: string
- * @param subTitleColor: string
- * @param content: string
- * @param flexReverse: boolean
+ * @param {string} image: string
+ * @param {string} altImage: string
+ * @param {string} subTitle: string
+ * @param {string} subTitleInColor: string
+ * @param {string} subTitleColor: string
+ * @param {string} content: string
+ * @param {boolean} flexReverse: boolean
  *
- * @returns JSX.Element
+ * @returns {JSX.Element}
  */
 export default function OurFeaturesContent({
   image = '',
