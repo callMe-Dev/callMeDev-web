@@ -1,14 +1,12 @@
 import React from 'react'
 import dogIllustration from '../../assets/illustrations/navbar-dog.svg'
-import waveToDowm from '../../assets/waves/waveToDown-dark.svg'
 
 import {
   Header,
   Nav,
   NavBarLink,
   NavIllustration,
-  NavIllustrationDiv,
-  NavWave,
+  NavIllustrationDiv
 } from './NavBar.styles'
 
 export default function NavBar() {
@@ -22,10 +20,6 @@ export default function NavBar() {
         <NavBarLink href='/'>Nosotros</NavBarLink>
         <NavBarLink href='/'>Features</NavBarLink>
       </Nav>
-      <NavWave
-        src={waveToDowm}
-        alt='Ilustracion en forma de ola hacia abajo en el navbar'
-      />
     </Header>
   )
 }

@@ -27,7 +27,7 @@ const keyFrame = css`
  *
  */
 const commonAfterStyles = css`
-  ${keyFrame}
+  ${keyFrame};
   visibility: hidden;
 
   background: var(--black);
@@ -46,17 +46,17 @@ const commonAfterStyles = css`
 `
 
 export const navBarImgAfter = css`
-  ${commonAfterStyles}
+  ${commonAfterStyles};
 
   content: 'Disfruta de la pagina :D';
-  ${'' /* left: 4.5rem; */}
+${'' /* left: 4.5rem; */}
   left: 0;
-  top: 0rem;
+  top: 0;
   width: 100px;
 `
 
 export const howCollaborateGithubAfter = css`
-  ${commonAfterStyles}
+  ${commonAfterStyles};
 
   content: 'Unete a nuestra organizacion! 🌟';
   left: 1rem;
