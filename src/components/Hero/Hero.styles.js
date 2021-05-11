@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { sideLayout } from '../../styles/utils/sideLayout'
 import { screens } from '../../styles/screens'
+import { afterWave } from '../../styles/utils/afterWave'
 
 export const HeroStyled = styled.section`
   background: var(--black);
@@ -9,9 +10,12 @@ export const HeroStyled = styled.section`
   ${sideLayout()}
 
   padding-top: 3rem;
+  margin-bottom: 50px;
+  display: block;
 
   @media (min-width: ${screens.tablet}) {
     padding-top: 5rem;
+    margin-bottom: 0;
   }
 
   @media (min-width: ${screens.ipad}) {
@@ -22,19 +26,25 @@ export const HeroStyled = styled.section`
     padding-top: 8rem;
   }
 
-  display: block;
 
   @media (min-width: ${screens.ipad}) {
     display: flex;
     justify-content: space-evenly;
+  }
+
+  &::after {
+    ${afterWave('/src/assets/waves/waveToDown-black.svg', 'bottom', '2px')}
   }
 `
 
 export const HeroLogo = styled.img`
   display: block;
   height: auto;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 270px;
+  position: relative;
+  z-index: 10;
 
   @media (min-width: ${screens.tablet}) {
     transition: var(--transition);
@@ -50,7 +60,8 @@ export const HeroLogo = styled.img`
   }
 
   @media (min-width: ${screens.ipad}) {
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
     width: 379px;
   }
 `
@@ -101,8 +112,7 @@ export const HeroDiscordBtn = styled.button`
   font-size: 1.2rem;
   font-weight: 500;
   justify-content: center;
-  margin: 0 auto;
-  margin-top: 1.6rem;
+  margin: 1.6rem auto 0;
   outline: none;
   padding: 0.8rem 2rem;
   width: auto;
@@ -110,10 +120,9 @@ export const HeroDiscordBtn = styled.button`
   transition: var(--transition);
 
   @media (min-width: ${screens.ipad}) {
-    margin: 0;
     padding: 0.6rem 1.5rem;
     font-size: 1.3rem;
-    margin-top: 1.6rem;
+    margin: 1.6rem 0 0;
   }
 
   &:hover {
@@ -124,43 +133,4 @@ export const HeroDiscordBtn = styled.button`
 export const HeroDiscordIcon = styled.img`
   height: 35px;
   width: 35px;
-`
-
-export const HeroWaveToDown = styled.img`
-  position: absolute;
-  bottom: -3.3rem;
-  left: 0;
-  width: 100%;
-
-  @media (max-width: ${screens.mobile}) {
-    bottom: -3rem;
-  }
-
-  @media (min-width: ${screens.$600}) {
-    bottom: -5rem;
-  }
-
-  @media (min-width: ${screens.tablet}) {
-    bottom: -5.3rem;
-  }
-
-  @media (min-width: 725px) {
-    bottom: -6.3rem;
-  }
-
-  @media (min-width: ${screens.$800}) {
-    bottom: -7.3rem;
-  }
-
-  @media (min-width: ${screens.ipad}) {
-    bottom: -8.3rem;
-  }
-
-  @media (min-width: ${screens.$1024}) {
-    bottom: -9rem;
-  }
-
-  @media (min-width: ${screens.desk}) {
-    bottom: -11.8rem;
-  }
 `

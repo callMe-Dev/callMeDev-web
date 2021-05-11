@@ -6,7 +6,7 @@ import { userNoSelect } from '../../../styles/utils/userNoSelect'
 export const OurFeaturesArticle = styled.article`
   margin-top: 3rem;
 
-  ${sideLayout()}
+  ${sideLayout()};
 
   @media (min-width: ${screens.ipad}) {
     display: flex;
@@ -21,7 +21,7 @@ export const OurFeaturesImg = styled.img`
   transition: var(--transition);
   width: 300px;
 
-  ${userNoSelect()}
+  ${userNoSelect()};
 
   @media (min-width: ${screens.ipad}) {
     margin: 0;
@@ -54,9 +54,8 @@ export const OurFeaturesSubTitle = styled.h2`
 export const OurFeaturesText = styled.p`
   text-align: center;
   color: var(--light-color);
-  width: 330px;
-  margin: 0 auto;
-  margin-top: 1rem;
+  max-width: 330px;
+  margin: 1rem auto 0;
 
   @media (min-width: ${screens.tablet}) {
     width: 500px;

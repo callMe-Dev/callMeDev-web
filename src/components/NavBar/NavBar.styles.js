@@ -4,17 +4,25 @@ import { sideLayout } from '../../styles/utils/sideLayout'
 import { screens } from '../../styles/screens'
 import { navBarImgAfter } from '../../styles/utils/afterBtn'
 import { userNoSelect } from '../../styles/utils/userNoSelect'
+import { afterWave } from '../../styles/utils/afterWave'
 
 export const Header = styled.header`
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   position: relative;
+  z-index: 100;
   background: var(--dark);
-  ${sideLayout()}
+  ${sideLayout()};
 
   @media (min-width: ${screens.ipad}) {
     padding-bottom: 0;
+  }
+
+  &::after{
+    ${afterWave('/src/assets/waves/waveToDown-dark.svg', 'bottom', '65px')};
+    z-index: -1;
   }
 `
 
@@ -67,7 +75,7 @@ export const NavIllustration = styled.img`
   transition: var(--transition);
   cursor: pointer;
   appearance: none;
-  ${userNoSelect()}
+  ${userNoSelect()};
 
   @media (min-width: ${screens.ipad}) {
     width: 80px;
@@ -76,30 +84,5 @@ export const NavIllustration = styled.img`
 
   &:hover {
     transform: scale(1.1);
-  }
-`
-
-export const NavWave = styled.img`
-  position: absolute;
-  left: 0;
-  bottom: -1.1rem;
-  width: 100%;
-  fill: var(--dark);
-  z-index: 10;
-
-  @media (min-width: ${screens.tablet}) {
-    bottom: -1.5rem;
-  }
-
-  @media (min-width: 740px) {
-    bottom: -2.5rem;
-  }
-
-  @media (min-width: ${screens.ipad}) {
-    bottom: -3.5rem;
-  }
-
-  @media (min-width: ${screens.desk}) {
-    bottom: -4.75rem;
   }
 `
