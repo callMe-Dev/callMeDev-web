@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import { sideLayout } from '../../styles/utils/sideLayout'
-import { screens } from '../../styles/screens'
-import { afterWave } from '../../styles/utils/afterWave'
+import { sideLayout } from '../../../styles/utils/sideLayout'
+import { screens } from '../../../styles/screens'
+import { afterWave } from '../../../styles/utils/afterWave'
 
 export const AboutUsStyled = styled.section`
   background-color: var(--black);

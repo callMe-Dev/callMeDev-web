@@ -1,10 +1,15 @@
 import React from 'react'
-import { AboutUsStyled, AboutUsText } from './AboutUsContent.styles'
+import { AboutUsText } from './AboutUsContent.styles'
 import AboutTitle from '../AboutTitle/AboutTitle'
+import { AboutContainer } from '../AboutContainer.styles'
 
 export default function AboutUsContent() {
   return(
-    <AboutUsStyled>
+    <AboutContainer
+      backgroundColor='var(--black)'
+      waveUrl='/src/assets/waves/waveToDown-black.svg'
+      wave
+    >
       <AboutTitle
         titleText='Sobre'
         titleSpan='Nosotros'
@@ -19,6 +24,6 @@ export default function AboutUsContent() {
       <AboutUsText>
         velit elementum sapien, vel luctus nulla tortor a libero. Curabitur volutpat quam id eros blandit, vel porttitor massa luctus. Nunc sed diam eget magna cursus convallis nec non neque. Nam sapien turpis, porttitor a mi quis, laoreet rhoncus lacus.
       </AboutUsText>
-    </AboutUsStyled>
+    </AboutContainer>
   )
 }

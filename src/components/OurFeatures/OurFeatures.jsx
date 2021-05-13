@@ -13,13 +13,13 @@ import {
 
 export default function OurFeatures() {
   return (
-    <OurFeaturesSection>
+    <OurFeaturesSection id='our-features'>
       <OurFeaturesFlex>
         <ContentTitle
           titleText='Nuestras'
           titleSpan='Features'
           titleColor='var(--green)'
-          withMarginTop={false}
+          marginTop="0"
         />
         <Invisible>Invisible</Invisible>
       </OurFeaturesFlex>

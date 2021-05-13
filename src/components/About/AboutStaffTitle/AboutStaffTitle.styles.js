@@ -5,6 +5,8 @@ export const AboutStaffTitleStyled = styled.h1`
   color: var(--white);
   font-weight: 600;
   font-size: 1.9rem;
+  margin-top: ${(props) => props.marginTop};
+  margin-bottom: 4rem;
 
   @media (min-width: ${screens.tablet}) {
     font-size: 2.5rem;

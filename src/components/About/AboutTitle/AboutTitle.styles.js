@@ -1,12 +1,12 @@
 import styled from 'styled-components'
-import { screens } from '../../styles/screens'
+import { screens } from '../../../styles/screens'
 
 export const AboutTitleStyled = styled.h1`
   color: var(--white);
   font-weight: 600;
   font-size: 1.9rem;
   text-align: center;
-  margin-top: 4rem;
+  margin-top: ${(props) => props.marginTop};
   margin-bottom: 4rem;
   text-transform: uppercase;
 
