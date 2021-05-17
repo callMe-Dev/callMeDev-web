@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { howCollaborateGithubAfter } from '../../styles/utils/afterBtn'
 import { sideLayout } from '../../styles/utils/sideLayout'
 import { screens } from '../../styles/screens'
+import { userNoSelect } from '../../styles/utils/userNoSelect'
 
 export const HowCollaborateStyled = styled.section`
   ${sideLayout()}
@@ -38,6 +39,7 @@ export const HowCollaborateImg = styled.img`
   height: auto;
   margin: 3rem auto;
   width: 300px;
+  ${userNoSelect()}
 
   @media (min-width: ${screens.$600}) {
     width: 400px;
