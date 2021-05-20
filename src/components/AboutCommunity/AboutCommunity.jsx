@@ -12,7 +12,7 @@ import {
 
 export default function AboutCommunity() {
   return (
-    <AboutCommunityStyled id="about-community">
+    <AboutCommunityStyled id='about-community'>
       <div>
         <ContentTitle
           titleText='Sobre la'
