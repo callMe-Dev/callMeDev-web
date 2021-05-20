@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { sideLayout } from '../../styles/utils/sideLayout'
 import { screens } from '../../styles/screens'
 import { afterWave } from '../../styles/utils/afterWave'
+import { userNoSelect } from '../../styles/utils/userNoSelect'
 
 export const HeroStyled = styled.section`
   background: var(--black);
@@ -19,17 +20,13 @@ export const HeroStyled = styled.section`
   }
 
   @media (min-width: ${screens.ipad}) {
+    display: flex;
+    justify-content: space-evenly;
     padding-top: 6rem;
   }
 
   @media (min-width: ${screens.desk}) {
     padding-top: 8rem;
-  }
-
-
-  @media (min-width: ${screens.ipad}) {
-    display: flex;
-    justify-content: space-evenly;
   }
 
   &::after {
@@ -45,6 +42,7 @@ export const HeroLogo = styled.img`
   width: 270px;
   position: relative;
   z-index: 10;
+  ${userNoSelect()}
 
   @media (min-width: ${screens.tablet}) {
     transition: var(--transition);
