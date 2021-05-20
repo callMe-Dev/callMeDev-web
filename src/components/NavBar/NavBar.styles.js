@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import {Link} from 'react-router-dom'
 import { textUnderline } from '../../styles/utils/textUnderline'
 import { sideLayout } from '../../styles/utils/sideLayout'
 import { screens } from '../../styles/screens'
@@ -40,7 +41,7 @@ export const Nav = styled.nav`
   }
 `
 
-export const NavBarLink = styled.a`
+export const NavBarLink = styled(Link)`
   color: var(--white);
   text-decoration: none;
   transition: transform var(--transition);

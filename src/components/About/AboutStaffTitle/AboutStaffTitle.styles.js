@@ -1,25 +1,26 @@
 import styled from 'styled-components'
-import { screens } from '../../styles/screens'
+import { screens } from '../../../styles/screens'
 
-export const ContentTitleStyled = styled.h1`
+export const AboutStaffTitleStyled = styled.h1`
   color: var(--white);
   font-weight: 600;
   font-size: 1.9rem;
   margin-top: ${(props) => props.marginTop};
-  margin-bottom: 1rem;
-  text-align: center;
+  margin-bottom: 4rem;
 
   @media (min-width: ${screens.tablet}) {
-    width: 350px;
-    margin: 2rem auto;
+    font-size: 2.5rem;
+  }
+
+  @media (min-width: ${screens.tablet}) {
+    font-size: 3rem;
   }
 
   @media (min-width: ${screens.ipad}) {
     text-align: left;
-    margin: 2rem 0;
   }
 `
 
-export const ContentTitleSpan = styled.span`
+export const AboutStaffTitleSpan = styled.span`
   color: ${(props) => props.titleColor};
 `

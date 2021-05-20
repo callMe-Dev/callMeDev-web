@@ -20,16 +20,13 @@ export const HeroStyled = styled.section`
   }
 
   @media (min-width: ${screens.ipad}) {
+    display: flex;
+    justify-content: space-evenly;
     padding-top: 6rem;
   }
 
   @media (min-width: ${screens.desk}) {
     padding-top: 8rem;
-  }
-
-  @media (min-width: ${screens.ipad}) {
-    display: flex;
-    justify-content: space-evenly;
   }
 
   &::after {

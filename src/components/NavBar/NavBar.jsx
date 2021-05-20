@@ -16,9 +16,9 @@ export default function NavBar() {
         <NavIllustration src={dogIllustration} alt='A dog in the navbar' />
       </NavIllustrationDiv>
       <Nav>
-        <NavBarLink href='/'>Home</NavBarLink>
-        <NavBarLink href='/'>Nosotros</NavBarLink>
-        <NavBarLink href='/'>Features</NavBarLink>
+        <NavBarLink to='/'>Home</NavBarLink>
+        <NavBarLink to='/about-us'>Nosotros</NavBarLink>
+        <NavBarLink to='/'>Features</NavBarLink>
       </Nav>
     </Header>
   )
