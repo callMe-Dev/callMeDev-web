@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { sideLayout } from '../../styles/utils/sideLayout'
 import { afterWave } from '../../styles/utils/afterWave'
 import { screens } from '../../styles/screens'
 

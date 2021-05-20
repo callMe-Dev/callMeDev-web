@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components'
 import { screens } from '../../styles/screens'
 import { userNoSelect } from '../../styles/utils/userNoSelect'
+import { outlineFocus } from '../../styles/utils/outlineFocus'
 
 export const ButtonStyled = styled.button`
   border-radius: var(--radius);
@@ -18,6 +19,8 @@ export const ButtonStyled = styled.button`
   width: auto;
   cursor: pointer;
   transition: var(--transition);
+  
+  ${outlineFocus()}
 
   ${userNoSelect()} /* For new themes add a color for the css variables and match the background and text */
 

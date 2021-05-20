@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { outlineFocus } from '../../../styles/utils/outlineFocus'
 
 export const Title = styled.h2`
   color: ${(props) => props.color};
@@ -21,4 +22,5 @@ export const ItemList = styled.li`
 export const StyledLink = styled.a`
   color: inherit;
   text-decoration: none;
+  ${outlineFocus()}
 `
