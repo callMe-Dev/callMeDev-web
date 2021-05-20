@@ -30,19 +30,19 @@ export const AboutCommunityStyled = styled.section`
 
 export const AboutCommunityText = styled.p`
   font-weight: 400;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   color: var(--white);
 
   @media (min-width: ${screens.tablet}) {
     text-align: center;
     width: 350px;
-    margin: 0 auto;
+    margin: 0 auto 1rem;
   }
 
   @media (min-width: ${screens.ipad}) {
     text-align: left;
     width: 450px;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
 `
 

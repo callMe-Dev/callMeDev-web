@@ -20,7 +20,7 @@ import {
  */
 export default function OurFeaturesContent({
   image = '',
-  altImage = 'Ilustracion de OurFeatures',
+  altImage = '',
   subTitle = '',
   subTitleInColor = '',
   subTitleColor = '',

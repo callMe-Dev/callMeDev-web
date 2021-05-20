@@ -35,12 +35,12 @@ export default function HowCollaborate() {
           <Button
             btnText='Github'
             btnImg={githubLogo}
-            btnImgAlt='Github'
+            btnImgAlt='Github logo'
             theme='black'
           />
         </GithubButton>
       </div>
-      <HowCollaborateImg src={collaboratorImg} alt='Colaboraciones' />
+      <HowCollaborateImg src={collaboratorImg} alt='3 personas colaborando juntas' />
     </HowCollaborateStyled>
   )
 }

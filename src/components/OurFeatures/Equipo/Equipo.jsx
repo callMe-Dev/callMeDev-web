@@ -9,6 +9,7 @@ export default function Equipo() {
     <EquipoStyled>
       <OurFeaturesContent
         image={teamwork}
+        altImage='3 personas trabajando en equipo'
         subTitle='Trabajo en'
         subTitleInColor='Equipo'
         subTitleColor='var(--blue)'
