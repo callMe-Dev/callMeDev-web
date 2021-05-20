@@ -57,7 +57,6 @@ export const HowCollaborateImg = styled.img`
 
 export const GithubButton = styled.div`
   position: relative;
-  display: inline-block;
 
   &:hover {
     &:after {

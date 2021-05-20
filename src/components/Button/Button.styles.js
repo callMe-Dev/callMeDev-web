@@ -19,31 +19,40 @@ export const ButtonStyled = styled.button`
   cursor: pointer;
   transition: var(--transition);
 
-  ${userNoSelect()} /* For new themes add a color for the css variables and match the background and text */ ${(props) =>
-  props.theme === 'blue' &&
+  ${userNoSelect()} /* For new themes add a color for the css variables and match the background and text */
+
+   ${(props) =>
+    props.theme === 'blue' &&
     css`
       color: var(--white);
       background: var(--blue);
-    `} ${(props) =>
-  props.theme === 'purple' &&
+    `}
+
+    ${(props) =>
+    props.theme === 'purple' &&
     css`
       color: var(--white);
       background: var(--purple);
-    `} ${(props) =>
-  props.theme === 'black' &&
+    `}
+
+    ${(props) =>
+    props.theme === 'black' &&
     css`
       color: var(--white);
       background: #101214;
-    `} ${(props) =>
-  props.theme === 'yellow' &&
+    `}
+
+    ${(props) =>
+    props.theme === 'yellow' &&
     css`
       color: var(--black);
       background: var(--yellow);
     `}
+
   @media (min-width: ${screens.ipad}) {
     padding: 0.6rem 1.5rem;
     font-size: 1.3rem;
-    margin-top: 1.6rem;
+    margin: 1.6rem 0;
   }
 
   &:hover {
