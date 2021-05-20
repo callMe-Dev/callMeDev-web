@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../Button/Button'
 import {
   GetStartedButton,
   GetStartedStyled,
@@ -12,11 +13,9 @@ export default function GetStarted() {
         !Que comience la <br />
         aventura!
       </GetStartedTitle>
-      <GetStartedButton
-        btnText='¡Unirse a la comunidad!'
-        theme='yellow'
-        withImg={false}
-      />
+      <GetStartedButton>
+        <Button btnText='¡Unirse a la comunidad!' theme='yellow' withImg={false} />
+      </GetStartedButton>
     </GetStartedStyled>
   )
 }
