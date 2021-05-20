@@ -1,5 +1,5 @@
 import React from 'react'
-import { nanoid } from 'nanoid'
+import nanoid from 'nanoid'
 import { Title, List, ItemList, StyledLink } from './FooterSection.styles'
 
 export const FooterSection = ({titleText, titleColor, items}) => (

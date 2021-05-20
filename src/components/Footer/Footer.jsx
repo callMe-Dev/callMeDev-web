@@ -1,5 +1,5 @@
 import React from 'react'
-import { nanoid } from 'nanoid'
+import nanoid from 'nanoid'
 import { StyledFooter, Responsive, FooterContent, FooterText } from './Footer.styles'
 import { FooterSection } from './FooterSection/FooterSection'
 import Button from '../Button/Button'
