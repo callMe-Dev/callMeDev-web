@@ -1,5 +1,5 @@
 import React from 'react'
-import nanoid from 'nanoid'
+import { nanoid } from 'nanoid'
 import { StyledFooter, Responsive, FooterContent, FooterText } from './Footer.styles'
 import { FooterSection } from './FooterSection/FooterSection'
 import Button from '../Button/Button'
@@ -13,17 +13,17 @@ export default function Footer() {
       items: [
         {
           title: 'Comunidad',
-          url: '#about-community'
+          url: '#about-community',
         },
         {
           title: 'Features',
-          url: '#our-features'
+          url: '#our-features',
         },
         {
           title: 'Normas',
-          url: '/'
-        }
-      ]
+          url: '/',
+        },
+      ],
     },
     {
       title: 'Features',
@@ -31,17 +31,17 @@ export default function Footer() {
       items: [
         {
           title: 'Comunidad',
-          url: '/'
+          url: '/',
         },
         {
           title: 'Features',
-          url: '/'
+          url: '/',
         },
         {
           title: 'Normas',
-          url: '/'
-        }
-      ]
+          url: '/',
+        },
+      ],
     },
     {
       title: 'Nosotros',
@@ -49,39 +49,40 @@ export default function Footer() {
       items: [
         {
           title: 'Proyectos',
-          url: '/about-us#our-projects'
+          url: '/about-us#our-projects',
         },
         {
           title: 'Creadores',
-          url: '/about-us#our-creators'
+          url: '/about-us#our-creators',
         },
         {
           title: 'Moderadores',
-          url: '/about-us#our-mods'
-        }
-      ]
+          url: '/about-us#our-mods',
+        },
+      ],
     },
   ]
 
-  return(
+  return (
     <StyledFooter>
       <Responsive>
-        {
-          footerPages.map((page) => (
-            <FooterSection
-              titleText={page.title}
-              titleColor={page.color}
-              items={page.items}
-              key={nanoid()}
-            />
-          ))
-        }
+        {footerPages.map((page) => (
+          <FooterSection
+            titleText={page.title}
+            titleColor={page.color}
+            items={page.items}
+            key={nanoid()}
+          />
+        ))}
         <FooterContent>
           <FooterText>
-              uere tellus vitae, bibendum ligula. Cras nisl ligula, gravida vel tellus ac, lobortis tincidunt orci. Mauris nec maximus justo. Mauris efficitur erat vitae ex imperdiet rutrum
+            uere tellus vitae, bibendum ligula. Cras nisl ligula, gravida vel tellus
+            ac, lobortis tincidunt orci. Mauris nec maximus justo. Mauris efficitur
+            erat vitae ex imperdiet rutrum
           </FooterText>
           <FooterText>
-            Pellentesque pellentesque lectus in nulla ornare efficitur. Nunc sed sem et sapien euismod tristique. Sed vel commodo ipsum.
+            Pellentesque pellentesque lectus in nulla ornare efficitur. Nunc sed sem
+            et sapien euismod tristique. Sed vel commodo ipsum.
           </FooterText>
           <Button
             btnText='Únete con Discord'
