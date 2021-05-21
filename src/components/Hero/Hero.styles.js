@@ -68,6 +68,7 @@ export const HeroTitle = styled.h1`
   color: var(--white);
   font-weight: 500;
   margin: 2rem 0;
+  text-align: center;
 
   @media (min-width: ${screens.tablet}) {
     text-align: center;
@@ -84,9 +85,10 @@ export const HeroTextContent = styled.p`
   font-weight: 400;
   margin-bottom: 0.5rem;
   color: var(--white);
+  text-align: center;
+  width: 100%;
 
   @media (min-width: ${screens.tablet}) {
-    text-align: center;
     width: 350px;
     margin: 0 auto;
   }

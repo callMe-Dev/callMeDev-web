@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { textUnderline } from '../../styles/utils/textUnderline'
 import { sideLayout } from '../../styles/utils/sideLayout'
 import { screens } from '../../styles/screens'
@@ -11,18 +11,18 @@ import { outlineFocus } from '../../styles/utils/outlineFocus'
 export const Header = styled.header`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
   position: relative;
   z-index: 100;
   background: var(--dark);
+  justify-content: space-between;
   ${sideLayout()};
 
   @media (min-width: ${screens.ipad}) {
     padding-bottom: 0;
   }
 
-  &::after{
+  &::after {
     ${afterWave('/src/assets/waves/waveToDown-dark.svg', 'bottom', '65px')};
     z-index: -1;
   }
@@ -31,7 +31,13 @@ export const Header = styled.header`
 export const Nav = styled.nav`
   display: flex;
   align-items: center;
-  gap: 0 1rem;
+  justify-content: center;
+
+  gap: 2rem;
+
+  @media (min-width: ${screens.mobile}) {
+    gap: 0 1rem;
+  }
 
   @media (min-width: ${screens.tablet}) {
     gap: 0 1.5rem;
@@ -79,6 +85,7 @@ export const NavIllustration = styled.img`
   transition: var(--transition);
   cursor: pointer;
   appearance: none;
+
   ${userNoSelect()};
 
   @media (min-width: ${screens.ipad}) {

@@ -5,6 +5,7 @@
  */
 
 export const screens = {
+  smallMobile: '310px',
   mobile: '375px',
   tablet: '700px',
   ipad: '1000px',

@@ -1,23 +1,15 @@
 import React from 'react'
-import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom'
-import Home from './views/Home/Home'
-import AboutUs from './views/AboutUs/AboutUs'
+import { BrowserRouter as Router } from 'react-router-dom'
 import NavBar from './components/NavBar/NavBar'
 import Footer from './components/Footer/Footer'
+import Routes from './views/Routes/Routes'
 
 function App() {
   return (
     <div className='App'>
       <Router>
         <NavBar />
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/about-us' component={AboutUs} />
-          <Route path='/*'>
-            <Redirect to='/' component={Home} />
-            {/* <Redirect to='/not-found' component={Error404} /> */}
-          </Route>
-        </Switch>
+        <Routes />
         <Footer />
       </Router>
     </div>

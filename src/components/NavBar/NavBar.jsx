@@ -6,7 +6,7 @@ import {
   Nav,
   NavBarLink,
   NavIllustration,
-  NavIllustrationDiv
+  NavIllustrationDiv,
 } from './NavBar.styles'
 
 export default function NavBar() {
@@ -18,7 +18,7 @@ export default function NavBar() {
       <Nav>
         <NavBarLink to='/'>Home</NavBarLink>
         <NavBarLink to='/about-us'>Nosotros</NavBarLink>
-        <NavBarLink to='/'>Features</NavBarLink>
+        <NavBarLink to='#features'>Features</NavBarLink>
       </Nav>
     </Header>
   )

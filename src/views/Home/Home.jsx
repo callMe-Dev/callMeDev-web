@@ -4,7 +4,7 @@ import AboutCommunity from '../../components/AboutCommunity/AboutCommunity'
 import HowCollaborate from '../../components/HowCollaborate/HowCollaborate'
 import OurFeatures from '../../components/OurFeatures/OurFeatures'
 import Rules from '../../components/Rules/Rules'
-import GetStarted from '../../components/GetStarted/GetStarted'
+import StartAdventure from '../../components/StartAdventure/StartAdevnture'
 import Hero from '../../components/Hero/Hero'
 
 import { HomeStyled } from './Home.styles'
@@ -17,7 +17,7 @@ export default function Home() {
       <OurFeatures />
       <HowCollaborate />
       <Rules />
-      <GetStarted />
+      <StartAdventure />
     </HomeStyled>
   )
 }
