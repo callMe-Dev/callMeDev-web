@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { outlineFocus } from '../../../styles/utils/outlineFocus'
 
 export const Title = styled.h2`
-  color: ${(props) => props.color};
+  color: ${(props) => props.color || 'var(--white)'};
   text-transform: uppercase;
   font-size: 1.7rem;
 `

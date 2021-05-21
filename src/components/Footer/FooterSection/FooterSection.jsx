@@ -10,6 +10,7 @@ import { Title, List, ItemList, StyledLink } from './FooterSection.styles'
  */
 
 /**
+ *
  * @param {String} titleText
  * @param {String} titleColor
  * @param {Array<TItems>} items
