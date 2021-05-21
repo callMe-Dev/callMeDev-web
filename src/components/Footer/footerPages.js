@@ -1,3 +1,5 @@
+import { nosotrosUrl } from '../../Routes/routes'
+
 export const footerPages = [
   {
     title: 'Home',
@@ -41,15 +43,15 @@ export const footerPages = [
     items: [
       {
         title: 'Proyectos',
-        url: '/about-us#our-projects',
+        url: `${nosotrosUrl}#projects`,
       },
       {
         title: 'Creadores',
-        url: '/about-us#our-creators',
+        url: `${nosotrosUrl}#creators`,
       },
       {
         title: 'Moderadores',
-        url: '/about-us#our-mods',
+        url: `${nosotrosUrl}#mods`,
       },
     ],
   },

@@ -10,9 +10,8 @@ export default function OurCreators() {
     <AboutContainer
       backgroundColor='var(--black)'
       waveUrl='/src/assets/waves/waveToDown-black.svg'
-      id='our-creators'
-      wave
-    >
+      id='creators'
+      wave>
       <MaxWidth>
         <AboutStaffTitle
           titleText='Nuestros'

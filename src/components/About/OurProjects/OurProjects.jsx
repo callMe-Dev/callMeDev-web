@@ -9,9 +9,8 @@ export default function OurProjects() {
     <AboutContainer
       backgroundColor='var(--dark)'
       waveUrl='/src/assets/waves/waveToDown-dark.svg'
-      id='our-projects'
-      wave
-    >
+      id='projects'
+      wave>
       <AboutTitle
         titleText='Nuestros'
         titleSpan='Proyectos'
