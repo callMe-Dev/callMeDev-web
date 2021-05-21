@@ -7,6 +7,7 @@ export default function Amistad() {
     <>
       <OurFeaturesContent
         image={friendshipSvg}
+        altImage='2 amigas'
         subTitleInColor='Amistad'
         subTitleColor='var(--purple)'
         content='uere tellus vitae, bibendum ligula. Cras nisl ligula, gravida vel tellus

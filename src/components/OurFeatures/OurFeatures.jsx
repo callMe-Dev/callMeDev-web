@@ -19,7 +19,7 @@ export default function OurFeatures() {
           titleText='Nuestras'
           titleSpan='Features'
           titleColor='var(--green)'
-          marginTop="0"
+          marginTop='0'
         />
         <Invisible>Invisible</Invisible>
       </OurFeaturesFlex>

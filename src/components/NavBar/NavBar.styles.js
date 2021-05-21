@@ -6,6 +6,7 @@ import { screens } from '../../styles/screens'
 import { navBarImgAfter } from '../../styles/utils/afterBtn'
 import { userNoSelect } from '../../styles/utils/userNoSelect'
 import { afterWave } from '../../styles/utils/afterWave'
+import { outlineFocus } from '../../styles/utils/outlineFocus'
 
 export const Header = styled.header`
   display: flex;
@@ -51,6 +52,8 @@ export const NavBarLink = styled(Link)`
     ${textUnderline('var(--indigo)')}
     transform: scale(1.05);
   }
+
+  ${outlineFocus()}
 
   @media (min-width: ${screens.$600}) {
     font-size: 1.2rem;

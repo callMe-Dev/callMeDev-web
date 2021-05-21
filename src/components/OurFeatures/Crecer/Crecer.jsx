@@ -7,7 +7,7 @@ export default function Crecer() {
     <>
       <OurFeaturesContent
         image={learningTogether}
-        altImage='Crecer Profesionalmente'
+        altImage='Personas subiendo un gráfico de barras'
         subTitle='Crecer'
         subTitleInColor='Profesionalmente'
         subTitleColor='var(--yellow)'

@@ -22,18 +22,18 @@ export default function AboutCommunity() {
         <AboutCommunityText>
           Somos una comunidad de programadores y diseñadores, que crea proyectos para
           poder aprender y obtener experiencia antes de y para conseguir un empleo.
-          <br />
-          <br />
+        </AboutCommunityText>
+        <AboutCommunityText>
           Creamos proyectos relacionado a todo el mundo TI, como la creacion de
           paginas Web, Backend, Bots de Discord e Interfaces de Usuario
-          <br />
-          <br />
+        </AboutCommunityText>
+        <AboutCommunityText>
           Tambien ayudamos a resolver dudas de aquellas personas interesadas en
           aprender a programar
         </AboutCommunityText>
         <Button
           btnImg={historyBook}
-          btnImgAlt='Conoce nuestra historia'
+          btnImgAlt='Libro'
           theme='blue'
           btnText='Nuestra historia'
         />

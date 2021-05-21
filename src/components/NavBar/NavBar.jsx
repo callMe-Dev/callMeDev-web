@@ -13,7 +13,7 @@ export default function NavBar() {
   return (
     <Header>
       <NavIllustrationDiv>
-        <NavIllustration src={dogIllustration} alt='A dog in the navbar' />
+        <NavIllustration src={dogIllustration} alt='Un perro con un corazón' />
       </NavIllustrationDiv>
       <Nav>
         <NavBarLink to='/'>Home</NavBarLink>
