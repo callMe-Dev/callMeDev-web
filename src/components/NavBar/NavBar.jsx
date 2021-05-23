@@ -1,12 +1,13 @@
 import React from 'react'
 import dogIllustration from '../../assets/illustrations/navbar-dog.svg'
+import { rootUrl, nosotrosUrl } from '../../Routes/routes'
 
 import {
   Header,
   Nav,
   NavBarLink,
   NavIllustration,
-  NavIllustrationDiv
+  NavIllustrationDiv,
 } from './NavBar.styles'
 
 export default function NavBar() {
@@ -16,9 +17,9 @@ export default function NavBar() {
         <NavIllustration src={dogIllustration} alt='Un perro con un corazón' />
       </NavIllustrationDiv>
       <Nav>
-        <NavBarLink to='/'>Home</NavBarLink>
-        <NavBarLink to='/about-us'>Nosotros</NavBarLink>
-        <NavBarLink to='/'>Features</NavBarLink>
+        <NavBarLink to={rootUrl}>Home</NavBarLink>
+        <NavBarLink to={nosotrosUrl}>Nosotros</NavBarLink>
+        <NavBarLink to='#features'>Features</NavBarLink>
       </Nav>
     </Header>
   )

@@ -3,10 +3,10 @@ import { sideLayout } from '../../styles/utils/sideLayout'
 import { screens } from '../../styles/screens'
 
 export const AboutCommunityStyled = styled.section`
-  padding-top: 14rem;
   position: relative;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   ${sideLayout()}
+  padding-top: 7rem;
 
   @media (min-width: ${screens.tablet}) {
     padding-top: 15rem;
@@ -32,9 +32,10 @@ export const AboutCommunityText = styled.p`
   font-weight: 400;
   margin-bottom: 1rem;
   color: var(--white);
+  text-align: center;
+  width: 100%;
 
   @media (min-width: ${screens.tablet}) {
-    text-align: center;
     width: 350px;
     margin: 0 auto 1rem;
   }

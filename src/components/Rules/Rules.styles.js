@@ -7,7 +7,7 @@ export const RulesStyled = styled.section`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 90px;
+  gap: 20px;
   max-width: 1250px;
   margin-left: auto;
   margin-right: auto;
@@ -16,6 +16,10 @@ export const RulesStyled = styled.section`
   line-height: 27px;
 
   ${sideLayout()}
+
+  @media (min-width: ${screens.tablet}) {
+    gap: 90px;
+  }
 
   @media (min-width: ${screens.desk}) {
     flex-direction: row;

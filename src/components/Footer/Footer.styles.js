@@ -8,6 +8,10 @@ export const StyledFooter = styled.footer`
   padding: 10rem 3rem 5rem;
   margin-top: 7rem;
 
+  @media (min-width: ${screens.tablet}) {
+    padding-top: 5rem;
+  }
+
   &::after {
     ${afterWave('/src/assets/waves/waveToUp-black.svg', 'top', '2px', 'up')}
   }

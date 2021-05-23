@@ -28,7 +28,8 @@
     "prettier/prettier": "off",
     "no-empty-pattern": "warn",
     "no-unused-vars": "error",
-    "react/prop-types": "off"
+    "react/prop-types": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   },
   "settings": {
     "import/resolver": {

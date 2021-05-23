@@ -2,14 +2,18 @@ import styled from 'styled-components'
 import { screens } from '../../styles/screens'
 import { sideLayout } from '../../styles/utils/sideLayout'
 
-export const GetStartedStyled = styled.section`
+export const StartAdventureStyled = styled.section`
   text-align: center;
   color: var(--purple);
   ${sideLayout()}
-  margin-top: 150px;
-  margin-bottom: 250px;
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+
+  @media (min-width: ${screens.tablet}) {
+    margin-top: 8.3rem;
+  }
 `
-export const GetStartedTitle = styled.h1`
+export const StartAdventureTitle = styled.h1`
   font-size: 1.6rem;
 
   @media (min-width: ${screens.tablet}) {
@@ -17,7 +21,7 @@ export const GetStartedTitle = styled.h1`
   }
 `
 
-export const GetStartedButton = styled.div`
+export const StartAdventureButton = styled.div`
   @media (min-width: ${screens.ipad}) {
     display: flex;
     justify-content: center;

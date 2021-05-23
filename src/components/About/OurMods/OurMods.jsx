@@ -10,8 +10,7 @@ export default function OurMods() {
     <AboutContainer
       backgroundColor='var(--dark)'
       waveUrl='/src/assets/waves/waveToDown-dark.svg'
-      id="our-mods"
-    >
+      id='mods'>
       <MaxWidth>
         <AboutStaffTitle
           titleText='Nuestros'
